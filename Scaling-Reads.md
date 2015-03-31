@@ -97,7 +97,7 @@ class Makara::Proxy
   protected
   def _appropriate_pool_with_master_default(*args)
     return @master_pool unless Thread.current[:distribute_reads]
-    _appropriate_pool_without_distribute_reads(*args)
+    _appropriate_pool_without_master_default(*args)
   end
   alias_method_chain :_appropriate_pool, :master_default
 end
