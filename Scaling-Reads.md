@@ -105,7 +105,7 @@ end
 module DistributeReads
   def distribute_reads
     Thread.current[:distribute_reads] = true
-    Makara::Context.set_current(Makara::Context.generate) if ENV["MAKARA"]
+    Makara::Context.set_current(Makara::Context.generate)
     yield
   ensure
     Thread.current[:distribute_reads] = false
