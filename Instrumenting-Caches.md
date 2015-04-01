@@ -1,5 +1,9 @@
 # Instrumenting Caches
 
+Love seeing how long ActiveRecord queries take and want the same for your cache stores?
+
+:four_leaf_clover: You’re in luck.
+
 Create `config/initializers/cache_instrumenters.rb` and add the code below.
 
 ## Rails Cache
