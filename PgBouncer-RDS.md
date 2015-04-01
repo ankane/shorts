@@ -46,7 +46,7 @@ Edit `/etc/pgbouncer/pgbouncer.ini`. The important settings are:
 
 ```ini
 [databases]
-db1 = host=127.0.0.1 port=5432 dbname=YOUR-DBNAME
+YOUR-DBNAME = host=127.0.0.1 port=5432 dbname=YOUR-DBNAME
 
 [pgbouncer]
 listen_addr = *
@@ -55,6 +55,8 @@ auth_type = md5
 auth_file = /etc/pgbouncer/userlist.txt
 pool_mode = transaction
 ```
+
+[View all settings](http://pgbouncer.projects.pgfoundry.org/doc/config.html)
 
 Create `/etc/pgbouncer/userlist.txt` with:
 
