@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Great Leadership Reads](Leadership-Reads.md)
 - [Distributed Architecture Talks](Distributed-Architecture-Talks.md)
 - [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
