@@ -14,7 +14,7 @@ Silence the default logging
 Rails.cache.silence!
 ```
 
-And if different than Redis
+and
 
 ```ruby
 class CacheInstrumenter < ActiveSupport::LogSubscriber
