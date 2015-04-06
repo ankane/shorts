@@ -11,6 +11,7 @@ Short, random tutorials
 Short, random posts
 
 - [Great Leadership Reads](Leadership-Reads.md)
+- [Great Programming Reads](Programming-Reads.md)
 - [Distributed Architecture Talks](Distributed-Architecture-Talks.md)
 
 :tangerine: Battle-tested at [Instacart](https://www.instacart.com/opensource)
