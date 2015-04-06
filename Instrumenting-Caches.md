@@ -31,9 +31,7 @@ class CacheInstrumenter < ActiveSupport::LogSubscriber
   end
 end
 
-if Rails.env.development? || Rails.env.test?
-  CacheInstrumenter.attach_to(:active_support)
-end
+CacheInstrumenter.attach_to(:active_support) unless Rails.env.production?
 ```
 
 ## Redis
@@ -60,9 +58,7 @@ class RedisInstrumenter < ActiveSupport::LogSubscriber
   end
 end
 
-if Rails.env.development? || Rails.env.test?
-  RedisInstrumenter.attach_to(:redis)
-end
+RedisInstrumenter.attach_to(:redis) unless Rails.env.production?
 ```
 
 ## Thanks
