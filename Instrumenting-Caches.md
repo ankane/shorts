@@ -8,6 +8,14 @@ Create `config/initializers/cache_instrumenters.rb` and add the code below.
 
 ## Rails Cache
 
+Silence the default logging
+
+```ruby
+Rails.cache.silence!
+```
+
+And if different than Redis
+
 ```ruby
 class CacheInstrumenter < ActiveSupport::LogSubscriber
   def cache_read(event)
@@ -25,7 +33,6 @@ end
 
 if Rails.env.development? || Rails.env.test?
   CacheInstrumenter.attach_to(:active_support)
-  Rails.cache.silence!
 end
 ```
 
