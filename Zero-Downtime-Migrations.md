@@ -18,7 +18,7 @@
   class AddOrdersCountToUsers < ActiveRecord::Migration
     disable_ddl_transaction! # very, very important!
 
-    def change
+    def up
       # add column without default
       add_column :users, :orders_count, :integer
 
@@ -29,6 +29,10 @@
 
       # add default
       change_column :users, :orders_count, :integer, default: 0, null: false
+    end
+
+    def down
+      remove_column :users, :orders_count
     end
   end
   ```
