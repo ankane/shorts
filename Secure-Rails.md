@@ -18,7 +18,7 @@ is vulnerable to injection. [Learn about other methods](http://rails-sqli.org).
 
 ## Data Transport
 
-Use SSL for everything.
+Use SSL for everything. Add the following to `config/environments/production.rb`.
 
 ```ruby
 config.force_ssl = true
