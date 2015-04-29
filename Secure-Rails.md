@@ -16,6 +16,10 @@ User.group(params[:column])
 
 is vulnerable to injection. [Learn about other methods](http://rails-sqli.org).
 
+## Headers
+
+Use [SecureHeaders](https://github.com/twitter/secureheaders).
+
 ## Data Transport
 
 Use SSL for everything. Add the following to `config/environments/production.rb`.
