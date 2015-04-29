@@ -43,6 +43,8 @@ What’s the difference? [Stack Overflow](http://stackoverflow.com/questions/655
 
 Use [Devise](https://github.com/plataformatec/devise). Security is very easy to get wrong. Let others worry about [timing attacks](http://en.wikipedia.org/wiki/Timing_attack).
 
+Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack).
+
 ### Authorization
 
 Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization). We like [Pundit](https://github.com/elabs/pundit).
