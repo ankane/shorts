@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Secure Rails](Secure-Rails.md)
 - [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
 - [attr_accessible to Strong Parameters](Strong-Parameters.md)
