@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [The Two Metrics You Need](The-Two-Metrics-You-Need.md)
 - [Secure Rails](Secure-Rails.md)
 - [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
