@@ -19,8 +19,8 @@ Here's how to get them.
 
 CloudWatch gives them for free
 
-Errors = Sum ELB 5XXs + Sum HTTP 5XXs
-Latency = Average Latency
+- Errors = Sum ELB 5XXs + Sum HTTP 5XXs
+- Latency = Average Latency
 
 ## Heroku
 
