@@ -54,6 +54,7 @@ listen_port = 6432
 auth_type = md5
 auth_file = /etc/pgbouncer/userlist.txt
 pool_mode = transaction
+server_reset_query =
 ```
 
 [View all settings](http://pgbouncer.projects.pgfoundry.org/doc/config.html)
