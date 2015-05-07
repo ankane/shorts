@@ -12,6 +12,7 @@ Short, random tutorials
 
 Short, random posts
 
+- [Favorite Quotes](Favorite-Quotes.md)
 - [Great Leadership Reads](Leadership-Reads.md)
 - [Great Programming Reads](Programming-Reads.md)
 - [Distributed Architecture Talks](Distributed-Architecture-Talks.md)
