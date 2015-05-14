@@ -1,51 +1,36 @@
 # Secure Rails
 
-The [Rails Security Guide](http://guides.rubyonrails.org/security.html) is a great starting point.
+Everyone writing code must be responsible for security. :lock:
 
-## Secrets
+Start with the [Rails Security Guide](http://guides.rubyonrails.org/security.html) to see how Rails protects you.
 
-Keep secret tokens out of your code. `ENV` variables are a good practice.
+## Best Practices
 
-## SQL Injection
+- Keep secret tokens out of your code - `ENV` variables are a good practice
 
-Even with ActiveRecord, SQL injection is still possible if misused.
+- Even with ActiveRecord, SQL injection is still possible if misused
 
-```ruby
-User.group(params[:column])
-```
+  ```ruby
+  User.group(params[:column])
+  ```
 
-is vulnerable to injection. [Learn about other methods](http://rails-sqli.org).
+  is vulnerable to injection. [Learn about other methods](http://rails-sqli.org)
 
-## Headers
+- Use [SecureHeaders](https://github.com/twitter/secureheaders)
 
-Use [SecureHeaders](https://github.com/twitter/secureheaders).
+- Use SSL for everything - add the following to `config/environments/production.rb`
 
-## Data Transport
+  ```ruby
+  config.force_ssl = true
+  ```
 
-Use SSL for everything. Add the following to `config/environments/production.rb`.
+- Use a library like [attr_encrypted](https://github.com/attr-encrypted/attr_encrypted) for sensitive information
 
-```ruby
-config.force_ssl = true
-```
+- Use [Devise](https://github.com/plataformatec/devise) for authentication
 
-## Data At Rest
+- Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack)
 
-Use a library like [attr_encrypted](https://github.com/attr-encrypted/attr_encrypted) for sensitive information.
-
-## Authentication and Authorization
-
-What’s the difference? [Stack Overflow](http://stackoverflow.com/questions/6556522/authentication-versus-authorization) says it best:
-
-- Authentication = login + password (who you are)
-- Authorization = permissions (what you are allowed to do)
-
-### Authentication
-
-Use [Devise](https://github.com/plataformatec/devise). Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack).
-
-### Authorization
-
-Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization). We like [Pundit](https://github.com/elabs/pundit).
+- Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization) - we like [Pundit](https://github.com/elabs/pundit)
 
 ## Tools
 
