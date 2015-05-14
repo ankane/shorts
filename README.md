@@ -17,4 +17,10 @@ Short, random posts
 - [Great Programming Reads](Programming-Reads.md)
 - [Distributed Architecture Talks](Distributed-Architecture-Talks.md)
 
+Guides
+
+- [Production Rails](https://github.com/ankane/production_rails)
+- [Search Guide](https://github.com/ankane/search_guide)
+- [Ahoy Guide](https://github.com/ankane/ahoy_guide)
+
 :tangerine: Battle-tested at [Instacart](https://www.instacart.com/opensource)
