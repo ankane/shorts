@@ -22,5 +22,3 @@ Guides
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Search Guide](https://github.com/ankane/search_guide)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
-
-:tangerine: Battle-tested at [Instacart](https://www.instacart.com/opensource)
