@@ -18,17 +18,21 @@ Start with the [Rails Security Guide](http://guides.rubyonrails.org/security.htm
 
 - Use [SecureHeaders](https://github.com/twitter/secureheaders)
 
-- Use SSL for everything - add the following to `config/environments/production.rb`
+- Protect all data in transit with HTTPS - add the following to `config/environments/production.rb`
 
   ```ruby
   config.force_ssl = true
   ```
 
-- Use a library like [attr_encrypted](https://github.com/attr-encrypted/attr_encrypted) for sensitive information
+- Protect sensitive data at rest with a library like [attr_encrypted](https://github.com/attr-encrypted/attr_encrypted)
+
+- Set `autocomplete="off"` for sensitive form fields, like credit card number
 
 - Use [Devise](https://github.com/plataformatec/devise) for authentication
 
 - Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack)
+
+- Notify users of password changes and attempts to change account email addresses
 
 - Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization) - we like [Pundit](https://github.com/elabs/pundit)
 
