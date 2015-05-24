@@ -32,7 +32,7 @@ Start with the [Rails Security Guide](http://guides.rubyonrails.org/security.htm
 
 - Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack)
 
-- Notify users of password changes and attempts to change account email addresses
+- Notify users of password changes and attempts to change email addresses
 
 - Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization) - we like [Pundit](https://github.com/elabs/pundit)
 
