@@ -32,9 +32,23 @@ Start with the [Rails Security Guide](http://guides.rubyonrails.org/security.htm
 
 - Rate limit login attempts with [Rack Attack](https://github.com/kickstarter/rack-attack)
 
+- Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization) - we like [Pundit](https://github.com/elabs/pundit)
+
 - Notify users of password changes and attempts to change email addresses
 
-- Rails has a number of gems for [authorization](https://www.ruby-toolbox.com/categories/rails_authorization) - we like [Pundit](https://github.com/elabs/pundit)
+- Ask search engines not to index pages with secret tokens in the URL
+
+  ```html
+  <meta name="robots" content="noindex, nofollow">
+  ```
+
+- Ask the browser [not to cache pages](http://stackoverflow.com/a/748646) with sensitive information
+
+  ```ruby
+  response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate"
+  response.headers["Pragma"] = "no-cache"
+  response.headers["Expires"] = "Sat, 01 Jan 2000 00:00:00 GMT"
+  ```
 
 ## Tools
 
