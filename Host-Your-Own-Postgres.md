@@ -35,16 +35,15 @@ sudo apt-get install -qq -y postgresql-9.4
 
 Edit `/etc/postgresql/9.4/main/postgresql.conf`.
 
-### Logging
+```sh
+# general
+max_connections = 100
 
-```conf
+# logging
 log_min_duration_statement = 100 # log queries over 100ms
 log_temp_files = 0               # log all temp files
-```
 
-### Stats
-
-```conf
+# stats
 shared_preload_libraries = 'pg_stat_statements'
 pg_stat_statements.max = 1000
 pg_stat_statements.track = all
