@@ -74,7 +74,7 @@ git push dokku master
 
 ## Workers
 
-Dokku only runs web processes by default. If you have workers or other process types, install [dokku-shoreman](dokku-shoreman).
+Dokku only runs web processes by default. If you have workers or other process types, install [dokku-shoreman](https://github.com/statianzo/dokku-shoreman).
 
 ```sh
 git clone https://github.com/statianzo/dokku-shoreman.git /var/lib/dokku/plugins/dokku-shoreman
