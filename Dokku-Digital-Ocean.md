@@ -82,6 +82,26 @@ dokku plugins-install
 dokku ps:rebuildall
 ```
 
+## One-Off Jobs
+
+```sh
+dokku run rake db:migrate
+dokku run rails console
+```
+
+## Scheduled Jobs
+
+Two options
+
+1. Add a [custom clock process](https://devcenter.heroku.com/articles/scheduled-jobs-custom-clock-processes) to your Procfile
+
+2. Or create `/etc/cron.d/myapp` with:
+
+  ```
+  * * * * * root /usr/local/bin/dokku run myapp rake task1
+  0 0 * * * root /usr/local/bin/dokku run myapp rake task2
+  ```
+
 ## Logging
 
 [Papertrail](https://papertrailapp.com) is great and has a free plan.
@@ -135,7 +155,6 @@ dokku nginx:import-ssl < archive-of-certs.tar
 
 - database
 - [monitoring](https://github.com/google/cadvisor)
-- scheduling
 
 ## Resources
 
