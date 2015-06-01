@@ -151,6 +151,24 @@ dokku nginx:import-ssl < archive-of-certs.tar
 
 [More info](http://progrium.viewdocs.io/dokku/nginx)
 
+## Memcached
+
+```sh
+git clone https://github.com/rlaneve/dokku-link /var/lib/dokku/plugins/link
+git clone https://github.com/jezdez/dokku-memcached-plugin /var/lib/dokku/plugins/memcached
+dokku plugins-install
+dokku memcached:create myapp
+dokku config:set myapp MEMCACHE_SERVERS=memcachedhost:11211
+```
+
+## Redis
+
+```sh
+git clone https://github.com/luxifer/dokku-redis-plugin /var/lib/dokku/plugins/redis
+dokku plugins-install
+dokku redis:create myapp
+```
+
 ## TODO
 
 - database
