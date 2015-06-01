@@ -156,6 +156,10 @@ dokku nginx:import-ssl < archive-of-certs.tar
 - database
 - [monitoring](https://github.com/google/cadvisor)
 
+## Bonus
+
+Find great Docker projects at [Awesome Docker](https://github.com/veggiemonk/awesome-docker).
+
 ## Resources
 
 - [Additional Recommended Steps for New Ubuntu 14.04 Servers](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers)
