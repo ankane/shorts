@@ -72,6 +72,16 @@ git remote add dokku dokku@dokkuhost:myapp
 git push dokku master
 ```
 
+## Workers
+
+Dokku only runs web processes by default. If you have workers or other process types, install [dokku-shoreman](dokku-shoreman).
+
+```sh
+git clone https://github.com/statianzo/dokku-shoreman.git /var/lib/dokku/plugins/dokku-shoreman
+dokku plugins-install
+dokku ps:rebuildall
+```
+
 ## Logging
 
 [Papertrail](https://papertrailapp.com) is great and has a free plan.
@@ -124,7 +134,6 @@ dokku nginx:import-ssl < archive-of-certs.tar
 ## TODO
 
 - database
-- [multiple processes](https://github.com/statianzo/dokku-shoreman)
 - [monitoring](https://github.com/google/cadvisor)
 - scheduling
 
