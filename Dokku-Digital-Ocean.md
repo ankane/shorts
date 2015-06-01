@@ -26,7 +26,7 @@ sudo ufw enable
 
 ```sh
 sudo apt-get install unattended-upgrades
-echo "APT::Periodic::Unattended-Upgrade "1";" >> /etc/apt/apt.conf.d/10periodic
+echo 'APT::Periodic::Unattended-Upgrade "1";' >> /etc/apt/apt.conf.d/10periodic
 ```
 
 Swap
