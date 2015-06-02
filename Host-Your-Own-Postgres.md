@@ -20,6 +20,14 @@ sudo apt-get install unattended-upgrades
 echo 'APT::Periodic::Unattended-Upgrade "1";' >> /etc/apt/apt.conf.d/10periodic
 ```
 
+Time zone
+
+```sh
+sudo dpkg-reconfigure tzdata
+```
+
+and select `None of the above`, then `UTC`.
+
 ## Install Postgres
 
 Install PostgreSQL 9.4
