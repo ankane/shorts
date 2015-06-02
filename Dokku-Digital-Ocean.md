@@ -39,6 +39,14 @@ sudo swapon /swapfile
 sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'
 ```
 
+Time zone
+
+```sh
+sudo dpkg-reconfigure tzdata
+```
+
+and select `None of the above`, then `UTC`.
+
 ## Deploy
 
 Get the official Dokku client
