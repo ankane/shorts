@@ -104,11 +104,14 @@ end
 
 module DistributeReads
   def distribute_reads
-    Thread.current[:distribute_reads] = true
-    Makara::Context.set_current(Makara::Context.generate)
-    yield
-  ensure
-    Thread.current[:distribute_reads] = false
+    previous_value = Thread.current[:distribute_reads]
+    begin
+      Thread.current[:distribute_reads] = true
+      Makara::Context.set_current(Makara::Context.generate)
+      yield
+    ensure
+      Thread.current[:distribute_reads] = previous_value
+    end
   end
 end
 
