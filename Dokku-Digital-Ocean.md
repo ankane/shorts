@@ -180,7 +180,7 @@ dokku redis:create myapp
 ## TODO
 
 - database
-- [monitoring](https://github.com/google/cadvisor)
+- [monitoring](https://www.brianchristner.io/how-to-setup-docker-monitoring/)
 
 ## Bonus
 
