@@ -54,6 +54,7 @@ Start with the [Rails Security Guide](http://guides.rubyonrails.org/security.htm
 
 - [Brakeman](https://github.com/presidentbeef/brakeman) is a great static analysis tool - it scans your code for vulnerabilities
 - [CodeClimate](https://codeclimate.com/) provides a similar hosted version
+- [bundler-audit](https://github.com/rubysec/bundler-audit) checks for vulnerable versions of gems
 - [HackerOne](https://hackerone.com/) is another good resource
 
 ## Additional Reading
