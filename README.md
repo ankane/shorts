@@ -5,7 +5,6 @@ Short, random tutorials
 - [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
 - [Host Your Own Postgres](Host-Your-Own-Postgres.md)
 - [The Two Metrics You Need](Two-Metrics.md)
-- [Secure Rails](Secure-Rails.md)
 - [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
 - [attr_accessible to Strong Parameters](Strong-Parameters.md)
@@ -22,6 +21,7 @@ Short, random posts
 
 Guides
 
+- [Secure Rails](https://github.com/ankane/secure_rails)
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Search Guide](https://github.com/ankane/search_guide)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
