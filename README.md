@@ -10,6 +10,7 @@ Short, random tutorials
 - [attr_accessible to Strong Parameters](Strong-Parameters.md)
 - [PgBouncer for Amazon RDS](PgBouncer-RDS.md)
 - [Instrumenting Caches](Instrumenting-Caches.md)
+- [.irbrc](irbrc.md)
 
 Short, random posts
 
