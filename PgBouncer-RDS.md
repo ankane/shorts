@@ -127,7 +127,7 @@ psql -h YOUR-EC2-HOSTNAME -p 6432 -d YOUR-DBNAME -U USERNAME1
 
 ## Statement Timeouts
 
-To use a statement timeout, set it on your database user.
+To use a [statement timeout](http://www.postgresql.org/docs/9.4/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT), run:
 
 ```sql
 ALTER ROLE USERNAME1 SET statement_timeout = 5000;
