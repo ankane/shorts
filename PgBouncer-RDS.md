@@ -125,6 +125,14 @@ To connect from another server, use:
 psql -h YOUR-EC2-HOSTNAME -p 6432 -d YOUR-DBNAME -U USERNAME1
 ```
 
+## Statement Timeouts
+
+To use a statement timeout, set it on your database user.
+
+```sql
+ALTER ROLE USERNAME1 SET statement_timeout = 5000;
+```
+
 ## TODO
 
 - shell script to do all of this
