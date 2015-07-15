@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [The Origin of SQL Queries](The-Origin-of-SQL-Queries.md)
 - [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
 - [Host Your Own Postgres](Host-Your-Own-Postgres.md)
 - [The Two Metrics You Need](Two-Metrics.md)
