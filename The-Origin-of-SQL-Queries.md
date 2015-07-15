@@ -42,7 +42,7 @@ coming("soon")
 
 ## R
 
-With [RPostgreSQL](http://cran.r-project.org/web/packages/RPostgreSQL/index.html), add to `dbGetQuery`.
+With [RPostgreSQL](http://cran.r-project.org/web/packages/RPostgreSQL/index.html), create `queryComments.R` and source appropriately.
 
 ```r
 dbGetQuery <- function(con, statement)
