@@ -26,9 +26,11 @@ Whether you use [PgHero](https://github.com/ankane/pghero), [pg_stat_statements]
 ```ruby
 module Marginalia
   module Comment
+    # add namespace to controller
     def self.controller
-      # add namespace to controller
-      @controller.controller_path if @controller.respond_to? :controller_path
+      if marginalia_controller.respond_to? :controller_path
+        marginalia_controller.controller_path
+      end
     end
   end
 end
@@ -48,7 +50,8 @@ With [RPostgreSQL](http://cran.r-project.org/web/packages/RPostgreSQL/index.html
 dbGetQuery <- function(con, statement)
 {
   path <- sub(".*=", "", commandArgs()[4])
-  statement <- paste0("/*script:", normalizePath(paste0(dirname(path), "/", path)), "*/ ", statement)
+  script <- normalizePath(paste0(dirname(path), "/", path))
+  statement <- paste0("/*application:Instacart,script:", script, "*/ ", statement)
   return(RPostgreSQL::dbGetQuery(con, statement))
 }
 ```
