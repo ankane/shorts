@@ -18,7 +18,7 @@ More specifically:
 Web app -> PgBouncer on port 6432 -> Stunnel on port 5432 -> RDS instance
 ```
 
-Once the server is ready, ssh in and run:
+Start by launching a new instance of Ubuntu Server 14.04 LTS. Once the server is ready, ssh in and run:
 
 ```sh
 sudo apt-get install stunnel4
@@ -103,7 +103,7 @@ START=1
 
 ```sh
 service stunnel4 start
-service pgbouncer start
+su postgres -c 'service pgbouncer start'
 ```
 
 ## Test
