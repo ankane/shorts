@@ -22,6 +22,7 @@ Short, random posts
 
 Guides
 
+- [The Ultimate Guide to Timeouts in Ruby](https://github.com/ankane/the-ultimate-guide-to-timeouts-in-ruby)
 - [Secure Rails](https://github.com/ankane/secure_rails)
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Search Guide](https://github.com/ankane/search_guide)
