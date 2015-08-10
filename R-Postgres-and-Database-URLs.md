@@ -3,8 +3,8 @@
 To use a `DATABASE_URL` with R, do:
 
 ```R
-require(RPostgreSQL, quiet=TRUE)
-require(httr, quiet=TRUE)
+require(RPostgreSQL)
+require(httr)
 
 establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
 {
