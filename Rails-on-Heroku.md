@@ -154,4 +154,8 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Happy coding!
+## Lastly...
+
+Have suggestions? [Please share](https://github.com/ankane/shorts/issues/new).
+
+:hatched_chick: Happy coding!
