@@ -12,7 +12,7 @@ For zero downtime deploys, enable [preboot](https://devcenter.heroku.com/article
 heroku features:enable -a appname preboot
 ```
 
-First, make sure your app boots. Create `lib/tasks/preload.rake` with:
+Add a preload check make sure your app boots. Create `lib/tasks/preload.rake` with:
 
 ```ruby
 task preload: :environment do
