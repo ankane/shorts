@@ -1,5 +1,7 @@
 # Zero Downtime Migrations with Postgres
 
+- Do not rename tables or columns that are used
+
 - Add and remove indexes concurrently
 
   ```ruby
@@ -36,5 +38,3 @@
     end
   end
   ```
-
-- Do not rename tables or columns that are used
