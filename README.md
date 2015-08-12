@@ -29,3 +29,8 @@ Guides
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Search Guide](https://github.com/ankane/search_guide)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
+
+Latest projects
+
+- [Jetpack](https://github.com/ankane/jetpack) - simple package management for R
+- [g index](https://github.com/ankane/gindex) - concurrent index migrations for Rails
