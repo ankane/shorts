@@ -122,7 +122,7 @@ heroku addons:create newrelic
 
 And follow the [installation instructions](https://devcenter.heroku.com/articles/newrelic#ruby-installation-and-configuration).
 
-To speed up requests, use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate).
+Use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate) to enable compression and [Amazon CloudFront](https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn) to serve assets.
 
 ## Autoscaling
 
