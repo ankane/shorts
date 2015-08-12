@@ -124,6 +124,10 @@ And follow the [installation instructions](https://devcenter.heroku.com/articles
 
 To speed up requests, use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate).
 
+## Autoscaling
+
+Check out [HireFire](https://www.hirefire.io/).
+
 ## Productivity
 
 Use [aliases](https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions) for less typing.
