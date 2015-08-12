@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Rails on Heroku](Rails-on-Heroku.md)
 - [The Origin of SQL Queries](The-Origin-of-SQL-Queries.md)
 - [R, Postgres, and Database URLs](R-Postgres-and-Database-URLs.md)
 - [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
