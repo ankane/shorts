@@ -136,6 +136,8 @@ Use [aliases](https://www.digitalocean.com/community/tutorials/an-introduction-t
 alias hc="heroku run console"
 ```
 
+If you find a way to enable console history, let me know.
+
 ## Staging
 
 Create a separate app for staging.
