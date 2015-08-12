@@ -104,7 +104,7 @@ bin/rollback
 
 ## Logs
 
-Add [Papertrail](https://papertrailapp.com/) to search your logs.
+Add [Papertrail](https://papertrailapp.com/) to make your logs easily searchable.
 
 ```sh
 heroku addons:create papertrail
@@ -162,6 +162,6 @@ end
 
 ## Lastly...
 
-Have suggestions? [Please share](https://github.com/ankane/shorts/issues/new).
+Have suggestions? [Please share](https://github.com/ankane/shorts/issues/new). For more tips, check out [Production Rails](https://github.com/ankane/production_rails).
 
 :hatched_chick: Happy coding!
