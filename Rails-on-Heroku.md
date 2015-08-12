@@ -140,13 +140,13 @@ Create a separate app for staging.
 heroku create staging-appname -r staging
 ```
 
-To push to staging, run:
+Deploy with:
 
 ```sh
 git push staging branch:master
 ```
 
-You may also want to password protect your staging environment with basic authentication.
+You may also want to password protect your staging environment.
 
 ```ruby
 class ApplicationController < ActionController::Base
