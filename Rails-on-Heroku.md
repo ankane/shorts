@@ -68,7 +68,7 @@ Also, turn off prepared statements. Otherwise, you’ll see errors whenever you 
 
 ```yml
 production:
-  prepared_statement: false
+  prepared_statements: false
 ```
 
 Don’t worry! Your app will still be fast (and you’ll probably do this anyways at scale since PgBouncer requires it).
