@@ -1,6 +1,6 @@
 # Zero Downtime Migrations with Postgres
 
-- Do not rename tables or columns that are used
+- Do not drop or rename tables or columns that are used
 
 - Add and remove indexes concurrently
 
