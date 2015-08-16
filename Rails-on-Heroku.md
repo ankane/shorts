@@ -122,7 +122,7 @@ heroku addons:create newrelic
 
 And follow the [installation instructions](https://devcenter.heroku.com/articles/newrelic#ruby-installation-and-configuration).
 
-Use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate) to enable compression and [Amazon CloudFront](https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn) to serve assets.
+Use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate) to enable compression and a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) like [Amazon CloudFront](https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn) to serve assets.
 
 ## Autoscaling
 
