@@ -83,6 +83,10 @@ su postgres -c 'service pgbouncer start'
 psql -h 127.0.0.1 -p 6432 -d YOUR-DBNAME -U USERNAME1
 ```
 
+## App Changes
+
+Be sure to disable prepared statements, as they will not work with PgBouncer in transaction mode.
+
 ## Statement Timeouts
 
 To use a [statement timeout](http://www.postgresql.org/docs/9.4/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT), run:
