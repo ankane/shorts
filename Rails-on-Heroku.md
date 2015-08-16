@@ -144,6 +144,7 @@ Create a separate app for staging.
 
 ```sh
 heroku create staging-appname -r staging
+heroku config:set RAILS_ENV=staging RACK_ENV=staging -r staging
 ```
 
 Deploy with:
