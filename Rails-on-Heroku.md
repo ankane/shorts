@@ -64,15 +64,6 @@ bin/deploy
 
 Follow best practices for [zero downtime migrations](https://github.com/ankane/shorts/blob/master/Zero-Downtime-Migrations.md).
 
-Also, turn off prepared statements. Otherwise, you’ll see errors whenever you add a column.
-
-```yml
-production:
-  prepared_statements: false
-```
-
-Don’t worry! Your app will still be fast (and you’ll probably do this anyways at scale since PgBouncer requires it).
-
 ## Rollbacks
 
 Create a rollback script in `bin/rollback`.
