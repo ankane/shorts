@@ -48,6 +48,8 @@ Use the same credentials as your database server.
 
 ## Increase File Limits
 
+If you need more than 1,000 connections to PgBouncer, you’ll need to increase file limits.
+
 Append to `/etc/security/limits.conf`:
 
 ```
