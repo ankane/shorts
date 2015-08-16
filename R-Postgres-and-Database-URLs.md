@@ -9,9 +9,12 @@ library(httr)
 establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
 {
   cred <- parse_url(url)
-  user <- toString(cred$username)
-  password <- toString(cred$password)
-  return(dbConnect(PostgreSQL(), host=cred$hostname, port=cred$port, user=user, password=password, dbname=cred$path))
+  if (!identical(cred$scheme, "postgres")) stop("Invalid database url")
+  if (is.null(cred$username)) cred$username <- ""
+  if (is.null(cred$password)) cred$password <- ""
+  if (is.null(cred$port)) cred$port <- 5432
+  return(dbConnect(PostgreSQL(), host=cred$hostname, port=cred$port,
+    user=cred$username, password=cred$password, dbname=cred$path))
 }
 
 con <- establishConnection()
