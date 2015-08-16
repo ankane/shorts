@@ -64,6 +64,15 @@ bin/deploy
 
 Follow best practices for [zero downtime migrations](https://github.com/ankane/shorts/blob/master/Zero-Downtime-Migrations.md).
 
+If you start to see errors about prepared statements after running migrations, disable them.
+
+```yml
+production:
+  prepared_statements: false
+```
+
+Don’t worry! Your app will still be fast (and you’ll probably do this anyways at scale since PgBouncer requires it).
+
 ## Rollbacks
 
 Create a rollback script in `bin/rollback`.
