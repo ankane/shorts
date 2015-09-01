@@ -1,6 +1,8 @@
-# R, Postgres, and Database URLs
+# R and Database URLs
 
 To use a `DATABASE_URL` with R, do:
+
+## Postgres
 
 ```R
 library(RPostgreSQL)
@@ -14,6 +16,27 @@ establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
   if (is.null(cred$password)) cred$password <- ""
   if (is.null(cred$port)) cred$port <- 5432
   return(dbConnect(PostgreSQL(), host=cred$hostname, port=cred$port,
+    user=cred$username, password=cred$password, dbname=cred$path))
+}
+
+con <- establishConnection()
+dbGetQuery(con, "SELECT true AS success")
+```
+
+## MySQL
+
+```R
+library(RMySQL)
+library(httr)
+
+establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
+{
+  cred <- parse_url(url)
+  if (!identical(cred$scheme, "mysql")) stop("Invalid database url")
+  if (is.null(cred$username)) cred$username <- "root"
+  if (is.null(cred$password)) cred$password <- ""
+  if (is.null(cred$port)) cred$port <- 3306
+  return(dbConnect(MySQL(), host=cred$hostname, port=cred$port,
     user=cred$username, password=cred$password, dbname=cred$path))
 }
 
