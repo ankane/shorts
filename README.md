@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Data Science SQL](Data-Science-SQL.md)
 - [Rails on Heroku](Rails-on-Heroku.md)
 - [The Origin of SQL Queries](The-Origin-of-SQL-Queries.md)
 - [R and Database URLs](R-Postgres-and-Database-URLs.md)
