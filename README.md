@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Security Checks](Security-Checks.md)
 - [Data Science SQL](Data-Science-SQL.md)
 - [Rails on Heroku](Rails-on-Heroku.md)
 - [The Origin of SQL Queries](The-Origin-of-SQL-Queries.md)
