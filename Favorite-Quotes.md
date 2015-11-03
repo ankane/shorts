@@ -6,6 +6,12 @@
 
 ***
 
+> Rules are for the guidance of wise men and the obedience of fools.
+
+- Douglas Bader
+
+***
+
 > Aaron believed that like you literally ought be to asking yourself all of the time “What is the most important thing I could be working on in the world right now?” and if you’re not working on that, why aren’t you?
 
 - The Internet’s Own Boy
