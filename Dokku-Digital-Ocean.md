@@ -122,6 +122,8 @@ Two options
 
 ### Apps
 
+Use [Logspout](https://github.com/gliderlabs/logspout).
+
 ```sh
 docker pull gliderlabs/logspout:latest
 docker run --restart=always -d --name=logspout -v=/var/run/docker.sock:/tmp/docker.sock -h $(hostname) gliderlabs/logspout syslog://logs.papertrailapp.com:12345
