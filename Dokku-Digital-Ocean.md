@@ -6,7 +6,7 @@
 
 DigitalOcean has a [great tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application) - the instructions are up-to-date, despite the notice.
 
-- Select **Dokku v0.3.18 on 14.04**
+- Select **Dokku v0.4.4 on 14.04**
 - Be sure to use an SSH key
 
 If you have a domain, use virtualhost naming. Otherwise, Dokku will use different ports for each deploy of your app. You can add easily add a domain later.
