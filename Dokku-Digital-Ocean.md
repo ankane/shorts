@@ -49,7 +49,7 @@ and select `None of the above`, then `UTC`.
 
 ## Deploy
 
-Get the official Dokku client
+Get the official Dokku client locally
 
 ```sh
 git clone git@github.com:progrium/dokku.git ~/.dokku
@@ -68,8 +68,8 @@ dokku apps:create myapp
 Add a `CHECKS` file
 
 ```txt
-WAIT=5
-ATTEMPTS=6
+WAIT=2
+ATTEMPTS=15
 /
 ```
 
@@ -108,6 +108,12 @@ Two options
   ```
   * * * * * root /usr/local/bin/dokku run myapp rake task1
   0 0 * * * root /usr/local/bin/dokku run myapp rake task2
+  ```
+
+  If choosing this option, include a job to clean containers.
+
+  ```
+  0 * * * * root /user/local/bin/dokku cleanup
   ```
 
 ## Logging
