@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Adding CSP to Rails](CSP-Rails.md)
 - [Security Checks](Security-Checks.md)
 - [Data Science SQL](Data-Science-SQL.md)
 - [Rails on Heroku](Rails-on-Heroku.md)
