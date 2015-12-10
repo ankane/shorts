@@ -35,6 +35,7 @@ Guides
 
 Latest projects
 
+- [pgsync](https://github.com/ankane/pgsync) - quickly and securely sync data between environments
 - [Strong Migrations](https://github.com/ankane/strong_migrations) - catch unsafe migrations at dev time
 - [Jetpack](https://github.com/ankane/jetpack) - simple package management for R
 - [g index](https://github.com/ankane/gindex) - concurrent index migrations for Rails
