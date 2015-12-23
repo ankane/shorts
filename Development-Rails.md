@@ -18,6 +18,18 @@ Use [bullet](https://github.com/flyerhzm/bullet) to find n + 1 queries.
 
 ## Console
 
+Enable console history and autocomplete in your `~/.irbrc`.
+
+```ruby
+require "irb/completion"
+require "irb/ext/save-history"
+IRB.conf[:SAVE_HISTORY] = 10000
+
+# and for awesome print
+require "awesome_print"
+AwesomePrint.irb!
+```
+
 Use [awesome_print](https://github.com/michaeldv/awesome_print) or [pry-rails](https://github.com/rweng/pry-rails) for a friendlier console.
 
 If you experience [double logging in the Rails console](https://github.com/rails/rails/issues/11415), create `config/initializers/logger.rb` with:
