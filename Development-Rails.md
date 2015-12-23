@@ -20,6 +20,19 @@ Use [bullet](https://github.com/flyerhzm/bullet) to find n + 1 queries.
 
 Use [awesome_print](https://github.com/michaeldv/awesome_print) or [pry-rails](https://github.com/rweng/pry-rails) for a friendlier console.
 
+If you experience [double logging in the Rails console](https://github.com/rails/rails/issues/11415), create `config/initializers/logger.rb` with:
+
+```ruby
+if Rails.env.development?
+  ActiveSupport::Logger.class_eval do
+    def self.broadcast(logger)
+      Module.new do
+      end
+    end
+  end
+end
+```
+
 ## Logging
 
 [Instrument caches](https://github.com/ankane/shorts/blob/master/Instrumenting-Caches.md) like ActiveRecord queries.
@@ -40,3 +53,7 @@ alias gc="git commit"
 alias gco="git checkout"
 alias gcm="git checkout master"
 ```
+
+## Also...
+
+Check out [best practices](https://github.com/ankane/production_rails) for running Rails in production.
