@@ -49,6 +49,10 @@ end
 
 [Instrument caches](https://github.com/ankane/shorts/blob/master/Instrumenting-Caches.md) like ActiveRecord queries.
 
+## Email
+
+Use [letter_opener](https://github.com/ryanb/letter_opener) for email.
+
 ## Aliases
 
 Use aliases for common commands. Here are a few of my favorites:
