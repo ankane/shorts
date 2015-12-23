@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Development Rails](Development-Rails.md)
 - [Adding CSP to Rails](CSP-Rails.md)
 - [Security Checks](Security-Checks.md)
 - [Data Science SQL](Data-Science-SQL.md)
