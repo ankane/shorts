@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [PgBouncer Setup](PgBouncer-Setup.md)
 - [Development Rails](Development-Rails.md)
 - [Adding CSP to Rails](CSP-Rails.md)
 - [Security Checks](Security-Checks.md)
@@ -15,7 +16,6 @@ Short, random tutorials
 - [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
 - [attr_accessible to Strong Parameters](Strong-Parameters.md)
-- [PgBouncer for Amazon RDS](PgBouncer-RDS.md)
 - [Instrumenting Caches](Instrumenting-Caches.md)
 
 Short, random posts

@@ -1,12 +1,16 @@
-# PgBouncer for Amazon RDS
+# PgBouncer Setup
 
-:fire: In under 5 minutes
+In under 5 minutes
 
 ## Get Started
 
-RDS does not give you shell access to database servers, so you need to spin up another EC2 instance to run PgBouncer.
-
 Here’s the flow:
+
+```
+Web app -> PgBouncer -> Postgres
+```
+
+You can install PgBouncer on the same server as Postgres or a separate server.  For Amazon RDS, you won’t have shell access to the database server, so you’ll need to spin up another EC2 instance to run PgBouncer.
 
 ```
 Web app -> EC2 running PgBouncer -> RDS instance
@@ -24,7 +28,7 @@ Edit `/etc/pgbouncer/pgbouncer.ini`. The important settings are:
 
 ```ini
 [databases]
-YOUR-DBNAME = host=YOUR-RDS-URL.rds.amazonaws.com port=5432 dbname=YOUR-DBNAME
+YOUR-DBNAME = host=YOUR-DATABASE-URL port=5432 dbname=YOUR-DBNAME
 
 [pgbouncer]
 listen_addr = *
