@@ -1,8 +1,8 @@
 # Learn Data Science
 
-R and Python are two popular languages for data science.
+R and Python are two popular languages for data science. We use both at [Instacart](https://www.instacart.com).
 
-**This is a short guide to learning R.**
+**This is a short guide for R.**
 
 It’s quick and everything is completely free. Follow in order for a smoother ride.
 
