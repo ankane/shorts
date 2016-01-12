@@ -16,7 +16,7 @@ Complete [Try R](http://tryr.codeschool.com). Then read about [data structures](
 
 ### Your First Model
 
-Kaggle is a platform for data science challenges. Complete the [first challenge](https://www.kaggle.com/c/titanic) by following this [great tutorial](http://trevorstephens.com/post/72916401642/titanic-getting-started-with-r).
+Kaggle is a platform for data science challenges. Complete the [first challenge](https://www.kaggle.com/c/titanic) by following [this great tutorial](http://trevorstephens.com/post/72916401642/titanic-getting-started-with-r).
 
 ### Keep Learning
 
