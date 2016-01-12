@@ -2,7 +2,7 @@
 
 Short, random tutorials
 
-- [Data Science for Software Engineers](Data-Science-for-Software-Engineers.md)
+- [Learn Data Science](Learn-Data-Science.md)
 - [PgBouncer Setup](PgBouncer-Setup.md)
 - [Development Rails](Development-Rails.md)
 - [Adding CSP to Rails](CSP-Rails.md)

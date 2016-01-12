@@ -1,4 +1,4 @@
-# Data Science for Software Engineers
+# Learn Data Science
 
 R and Python are two popular languages for data science.
 
