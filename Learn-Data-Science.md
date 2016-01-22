@@ -12,8 +12,6 @@ Download [R](https://cran.rstudio.com/) and [RStudio (Desktop, Open Source editi
 
 ### Getting Started
 
-Get a [quick overview](https://www.coursera.org/learn/data-science-course) of data science.
-
 Complete [Try R](http://tryr.codeschool.com). Then read about [data structures](http://adv-r.had.co.nz/Data-structures.html) and [subsetting](http://adv-r.had.co.nz/Subsetting.html). The `str()` command will be a favorite as you learn.
 
 ### Your First Model
