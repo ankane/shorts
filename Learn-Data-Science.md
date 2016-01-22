@@ -20,10 +20,11 @@ Kaggle is a platform for data science competitions. Complete the [“getting sta
 
 ### Keep Learning
 
-Learn how to create plots with [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis).
+Read [R for Data Science](http://r4ds.had.co.nz/).
 
-Also check out:
+Also check out these courses.
 
-- [Data Cleaning](https://www.coursera.org/learn/data-cleaning)
+- [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis).
 - [Regression Models](https://www.coursera.org/learn/regression-models)
 - [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
+- [Data Cleaning](https://www.coursera.org/learn/data-cleaning)
