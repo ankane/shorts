@@ -20,11 +20,11 @@ Kaggle is a platform for data science competitions. Complete the [“getting sta
 
 ### Keep Learning
 
-Read [R for Data Science](http://r4ds.had.co.nz/).
+Read [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (available as a free PDF).
 
-Also check out these courses.
+Also, check out [R for Data Science](http://r4ds.had.co.nz/) and these courses:
 
+- [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
 - [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis).
 - [Regression Models](https://www.coursera.org/learn/regression-models)
-- [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
 - [Data Cleaning](https://www.coursera.org/learn/data-cleaning)
