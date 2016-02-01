@@ -20,7 +20,7 @@ Kaggle is a platform for data science competitions. Complete the [“getting sta
 
 ### Keep Learning
 
-Read and do the labs in [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (available as a free PDF).
+Read and do the labs in [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (available as a free PDF). Understand the bias-variance tradeoff.
 
 Also, check out [R for Data Science](http://r4ds.had.co.nz/) and these courses:
 
