@@ -22,9 +22,17 @@ Kaggle is a platform for data science competitions. Complete the [“getting sta
 
 Read and do the labs in [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (available as a free PDF). Understand the bias-variance tradeoff.
 
+Get a quick intro to [time-series analysis](https://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/src/timeseries.html).
+
+Check out the [Google’s R Style Guide](https://google.github.io/styleguide/Rguide.xml).
+
 Also, check out [R for Data Science](http://r4ds.had.co.nz/) and these courses:
 
 - [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
 - [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis).
 - [Regression Models](https://www.coursera.org/learn/regression-models)
 - [Data Cleaning](https://www.coursera.org/learn/data-cleaning)
+
+### Good to Know
+
+- variables and function names in R can (and often do) contain dots - `lm.fit` is a variable name, not a call to the `lm` object
