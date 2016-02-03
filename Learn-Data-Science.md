@@ -25,7 +25,7 @@ Read and do the labs in [An Introduction to Statistical Learning](http://www-bcf
 Check out [R for Data Science](http://r4ds.had.co.nz/) and these courses:
 
 - [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
-- [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis).
+- [Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis)
 - [Regression Models](https://www.coursera.org/learn/regression-models)
 - [Data Cleaning](https://www.coursera.org/learn/data-cleaning)
 
