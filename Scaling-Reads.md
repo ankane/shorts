@@ -93,14 +93,14 @@ Also, we want to read from master by default so have to patch Makara. Create an 
 ```ruby
 Makara::Cache.store = :noop
 
-class Makara::Proxy
-  protected
-  def _appropriate_pool_with_master_default(*args)
+class DefaultToMasterPool
+  def _appropriate_pool(*args)
     return @master_pool unless Thread.current[:distribute_reads]
-    _appropriate_pool_without_master_default(*args)
+    super
   end
-  alias_method_chain :_appropriate_pool, :master_default
 end
+
+Makara::Proxy.send :prepend, DefaultToMasterPool
 
 module DistributeReads
   def distribute_reads
