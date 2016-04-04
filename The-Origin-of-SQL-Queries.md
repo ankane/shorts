@@ -52,7 +52,7 @@ dbGetQuery <- function(con, statement)
   path <- sub(".*=", "", commandArgs()[4])
   script <- normalizePath(paste0(dirname(path), "/", path))
   statement <- paste0("/*application:Instacart,script:", script, "*/ ", statement)
-  return(RPostgreSQL::dbGetQuery(con, statement))
+  RPostgreSQL::dbGetQuery(con, statement)
 }
 ```
 

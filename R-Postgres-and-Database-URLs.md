@@ -15,8 +15,8 @@ establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
   if (is.null(cred$username)) cred$username <- ""
   if (is.null(cred$password)) cred$password <- ""
   if (is.null(cred$port)) cred$port <- 5432
-  return(dbConnect(PostgreSQL(), host=cred$hostname, port=cred$port,
-    user=cred$username, password=cred$password, dbname=cred$path))
+  dbConnect(PostgreSQL(), host=cred$hostname, port=cred$port,
+    user=cred$username, password=cred$password, dbname=cred$path)
 }
 
 con <- establishConnection()
@@ -36,8 +36,8 @@ establishConnection <- function(url=Sys.getenv("DATABASE_URL"))
   if (is.null(cred$username)) cred$username <- "root"
   if (is.null(cred$password)) cred$password <- ""
   if (is.null(cred$port)) cred$port <- 3306
-  return(dbConnect(MySQL(), host=cred$hostname, port=cred$port,
-    user=cred$username, password=cred$password, dbname=cred$path))
+  dbConnect(MySQL(), host=cred$hostname, port=cred$port,
+    user=cred$username, password=cred$password, dbname=cred$path)
 }
 
 con <- establishConnection()
