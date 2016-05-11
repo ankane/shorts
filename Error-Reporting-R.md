@@ -2,7 +2,7 @@
 
 R supports global error handling, making it easy to report all errors without individual `tryCatch` statements.
 
-Create a file to include at the start of all your scripts.
+Create a file to source at the start of all your scripts.
 
 ```R
 if (!interactive()) {
