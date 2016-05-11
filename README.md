@@ -2,6 +2,7 @@
 
 Short, random tutorials
 
+- [Error Reporting in R](Error-Reporting-R.md)
 - [Startup Security](Startup-Security.md)
 - [Learn Data Science](Learn-Data-Science.md)
 - [PgBouncer Setup](PgBouncer-Setup.md)
