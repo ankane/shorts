@@ -6,7 +6,7 @@ Create a file to source at the start of all your scripts.
 
 ```R
 if (!interactive()) {
-  options(error=function() {
+  options(error = function() {
     message <- geterrmessage()
 
     ### your error reporting goes here
@@ -43,7 +43,7 @@ rollbar.log <- function(level, message) {
   url <- "https://api.rollbar.com/api/1/item/"
   host <- Sys.info()["nodename"]
 
-  payload = list(
+  payload <- list(
     access_token = access_token,
     data = list(
       environment = environment,
@@ -61,8 +61,8 @@ rollbar.log <- function(level, message) {
   )
 
   send <- function() {
-    response <- POST(url, body = payload, encode = "json")
-    body <- content(response, "parsed")
+    response <- httr::POST(url, body = payload, encode = "json")
+    body <- httr::content(response, "parsed")
     write("[Rollbar] Scheduling payload", stderr())
     write(paste0("[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=", body$result$uuid, " (only available if report was successful)"), stderr())
   }
