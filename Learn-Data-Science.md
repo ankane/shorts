@@ -8,7 +8,7 @@ It’s quick and everything is completely free. Follow in order for a smoother r
 
 ### Setup
 
-Download [R](https://cran.rstudio.com/) and [RStudio (Desktop, Open Source edition)](https://www.rstudio.com/products/RStudio/).
+Download [R](https://cloud.r-project.org/) and [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/).
 
 ### Getting Started
 
