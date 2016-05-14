@@ -44,7 +44,7 @@ Guides
 
 Latest projects
 
-- [rollbar](https://github.com/ankane/rollbar) - Error tracking for R
+- [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine
 - [Strong Migrations](https://github.com/ankane/strong_migrations) - catch unsafe migrations at dev time
