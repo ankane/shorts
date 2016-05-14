@@ -1,5 +1,11 @@
 # Shorts
 
+Featured
+
+- [Learn Data Science](Learn-Data-Science.md)
+- [Production Rails](https://github.com/ankane/production_rails)
+- [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
+
 Short, random tutorials
 
 - [Error Reporting in R](Error-Reporting-R.md)
@@ -16,7 +22,6 @@ Short, random tutorials
 - [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
 - [Host Your Own Postgres](Host-Your-Own-Postgres.md)
 - [The Two Metrics You Need](Two-Metrics.md)
-- [Zero Downtime Migrations with Postgres](Zero-Downtime-Migrations.md)
 - [Scaling Reads](Scaling-Reads.md)
 - [attr_accessible to Strong Parameters](Strong-Parameters.md)
 - [Instrumenting Caches](Instrumenting-Caches.md)
@@ -31,14 +36,15 @@ Short, random posts
 
 Guides
 
-- [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
-- [Secure Rails](https://github.com/ankane/secure_rails)
 - [Production Rails](https://github.com/ankane/production_rails)
+- [Secure Rails](https://github.com/ankane/secure_rails)
+- [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 - [Search Guide](https://github.com/ankane/search_guide)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
 
 Latest projects
 
+- [rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine
 - [Strong Migrations](https://github.com/ankane/strong_migrations) - catch unsafe migrations at dev time
