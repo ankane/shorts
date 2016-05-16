@@ -47,5 +47,7 @@ Latest projects
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine
-- [Strong Migrations](https://github.com/ankane/strong_migrations) - catch unsafe migrations at dev time
-- [Jetpack](https://github.com/ankane/jetpack) - simple package management for R
+- [Strong Migrations](https://github.com/ankane/strong_migrations) - Catch unsafe migrations at dev time
+- [Jetpack](https://github.com/ankane/jetpack) - Simple package management for R
+
+Full list of [open source projects](Open-Source-Projects.md)
