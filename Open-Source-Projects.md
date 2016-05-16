@@ -23,7 +23,7 @@
 - [Jetpack](https://github.com/ankane/jetpack) - Simple package manager for R
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 
-## Rails
+## Ruby
 
 ActiveRecord
 
@@ -66,7 +66,6 @@ Other
 - [Clockwork Web](https://github.com/ankane/clockwork_web) - A web interface for Clockwork
 - [Errbase](https://github.com/ankane/errbase) - Common exception reporting for a variety of services
 - [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
-- [heroku2dokku](https://github.com/ankane/heroku2dokku) - Heroku -> Dokku in minutes
 - [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
 - [Mailkick](https://github.com/ankane/mailkick) - Email subscriptions made easy
 - [Mainstreet](https://github.com/ankane/mainstreet) - A standard US address model for Rails
@@ -86,6 +85,10 @@ Other
 - [groupdate.sql](https://github.com/ankane/groupdate.sql) - The simplest way to group temporal data
 - [movielens.sql](https://github.com/ankane/movielens.sql) - The MovieLens database in SQL
 - [pghero.sql](https://github.com/ankane/pghero.sql) - Postgres insights made easy
+
+## Other
+
+- [heroku2dokku](https://github.com/ankane/heroku2dokku) - Heroku -> Dokku in minutes
 
 ## Guides
 
