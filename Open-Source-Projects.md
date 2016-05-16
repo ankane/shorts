@@ -89,6 +89,7 @@ Other
 ## Other
 
 - [heroku2dokku](https://github.com/ankane/heroku2dokku) - Heroku -> Dokku in minutes
+- [alias](https://github.com/ankane/alias) - The simple command I always forget to use
 
 ## Guides
 
