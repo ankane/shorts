@@ -44,6 +44,7 @@ Guides
 
 Latest projects
 
+- [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine
