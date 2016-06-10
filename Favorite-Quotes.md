@@ -18,6 +18,12 @@
 
 ***
 
+> To avoid criticism, say nothing, do nothing, be nothing.
+
+- Aristotle
+
+***
+
 > The difference between pigeons and oil men in the 80s was that a pigeon could still make a deposit on a Mercedes.
 
 - Houston, We Have a Problem documentary
