@@ -32,7 +32,7 @@ Create `config/initializers/rack_attack.rb` with:
 
 ```ruby
 Rack::Attack.throttle("logins/ip", limit: 20, period: 1.hour) do |req|
-  req.ip if req.post? && req.path == "/users/sign_in"
+  req.remote_ip if req.post? && req.path == "/users/sign_in"
 end
 
 ActiveSupport::Notifications.subscribe("rack.attack") do |name, start, finish, request_id, req|
@@ -48,14 +48,14 @@ Create `config/initializers/warden.rb` with:
 Warden::Manager.after_set_user except: :fetch do |user, auth, opts|
   unless auth.winning_strategy.is_a?(Devise::Strategies::Rememberable)
     req = ActionDispatch::Request.new(auth.env)
-    puts "Login success: #{user.email} from #{req.ip}"
+    puts "Login success: #{user.email} from #{req.remote_ip}"
   end
 end
 
 Warden::Manager.before_failure do |env, opts|
   if opts[:message]
     req = ActionDispatch::Request.new(env)
-    puts "Login failure: #{req.params[:user][:email]} from #{req.ip} for #{opts[:message]}"
+    puts "Login failure: #{req.params[:user][:email]} from #{req.remote_ip} for #{opts[:message]}"
   end
 end
 ```
