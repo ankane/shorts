@@ -6,7 +6,7 @@ Replace the `puts` calls with actual code :)
 
 #### Send notifications for important events
 
-Like a user changing his or her email or password. For email changes, notify both the old and new email addresses to prevent quiet account takeovers (changing the email then resetting password).
+Like a user changing his or her email or password. For email changes, notify both the old and new email addresses to prevent quiet account takeovers (changing the email then resetting the password).
 
 ```ruby
 class User < ActiveRecord::Base
