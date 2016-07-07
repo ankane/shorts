@@ -55,7 +55,7 @@ end
 Warden::Manager.before_failure do |env, opts|
   if opts[:message]
     req = ActionDispatch::Request.new(env)
-    puts "Login failure: #{req.params[:user][:email] rescue "unknown"} from #{req.ip} for #{opts[:message]}"
+    puts "Login failure: #{req.params[:user][:email]} from #{req.ip} for #{opts[:message]}"
   end
 end
 ```
