@@ -1,6 +1,6 @@
 # Hardening Devise
 
-A few tips to make your [Devise](https://github.com/plataformatec/devise) setup more secure :lock:
+A few basic steps to make your [Devise](https://github.com/plataformatec/devise) setup more secure :lock:
 
 Replace the `puts` calls with actual code :)
 
@@ -59,3 +59,5 @@ Warden::Manager.before_failure do |env, opts|
   end
 end
 ```
+
+Remember, [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_%28computing%29)!
