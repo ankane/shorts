@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Hardening Devise](Hardening-Devise.md)
 - [Error Reporting in R](Error-Reporting-R.md)
 - [Startup Security](Startup-Security.md)
 - [Learn Data Science](Learn-Data-Science.md)
