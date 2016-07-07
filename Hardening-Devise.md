@@ -10,8 +10,8 @@ Like a user changing his or her email or password. For email changes, notify bot
 
 ```ruby
 class User < ActiveRecord::Base
-  before_update :notify_email_change, if: -> { email_changed? }
-  before_update :notify_password_change, if: -> { encrypted_password_changed? }
+  after_update :notify_email_change, if: -> { email_changed? }
+  after_update :notify_password_change, if: -> { encrypted_password_changed? }
 
   def notify_email_change
     puts "Sending email change to #{email_was}"
