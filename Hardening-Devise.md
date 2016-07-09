@@ -61,3 +61,5 @@ end
 ```
 
 Remember, [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_%28computing%29)!
+
+For more, check out [Secure Rails](https://github.com/ankane/secure_rails).
