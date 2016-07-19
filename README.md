@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Google OAuth with Devise](Google-OAuth-with-Devise.md)
 - [Hardening Devise](Hardening-Devise.md)
 - [Error Reporting in R](Error-Reporting-R.md)
 - [Startup Security](Startup-Security.md)
