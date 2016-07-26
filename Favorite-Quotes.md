@@ -18,6 +18,12 @@
 
 ***
 
+> Worrying is like a rocking chair. It gives you something to do, but it doesn’t get you anywhere.
+
+- Van Wilder
+
+***
+
 > To avoid criticism, say nothing, do nothing, be nothing.
 
 - Aristotle
