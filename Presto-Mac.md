@@ -47,6 +47,6 @@ Try one of your tables with:
 SELECT * FROM mytable;
 ```
 
-There are also [clients in many different languages](https://prestodb.io/resources.html) you can use.
+There are also clients in [many different languages](https://prestodb.io/resources.html#libraries) you can use.
 
 :rabbit: :tophat: :sparkles:
