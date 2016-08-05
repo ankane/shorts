@@ -1,6 +1,6 @@
 # Installing Presto for Mac
 
-[Presto](https://prestodb.io/) is a “Distributed SQL Query Engine for Big Data”.
+[Presto](https://prestodb.io/) is a “Distributed SQL Query Engine for Big Data” that gives you the ability to join across data stores! :tada:
 
 ## Server
 
@@ -47,7 +47,6 @@ Try one of your tables with:
 SELECT * FROM mytable;
 ```
 
-## Resources
+There are also [clients in many different languages](https://prestodb.io/resources.html) you can use.
 
-- [List of clients](https://prestodb.io/resources.html)
-- [Installation instructions](https://prestodb.io/docs/current/installation/deployment.html)
+:rabbit: :tophat: :sparkles:
