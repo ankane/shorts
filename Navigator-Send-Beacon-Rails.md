@@ -2,7 +2,7 @@
 
 [navigator.sendBeacon](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) is a neat new API. It allows you to send an asynchronous `POST` request without delaying the page unload.
 
-To prevent the `Can't verify CSRF token authenticity` with Rails, use the method below:
+To prevent `Can't verify CSRF token authenticity` with Rails, use the method below:
 
 ```javascript
 function csrfProtect(payload) {
