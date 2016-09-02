@@ -20,4 +20,6 @@ var payload = {hello: "beacon"};
 navigator.sendBeacon("/some/path", csrfProtect(payload));
 ```
 
+For a real-world use case, check out [Ahoy.js](https://github.com/ankane/ahoy.js).
+
 :anchor:
