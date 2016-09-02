@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [navigator.sendBeacon and Rails](Navigator-Send-Beacon-Rails.md)
 - [Installing Presto for Mac](Presto-Mac.md)
 - [Google OAuth with Devise](Google-OAuth-with-Devise.md)
 - [Hardening Devise](Hardening-Devise.md)
