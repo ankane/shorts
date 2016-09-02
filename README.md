@@ -48,6 +48,7 @@ Guides
 
 Latest projects
 
+- [React Chartkick](https://github.com/ankane/react-chartkick)
 - [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
