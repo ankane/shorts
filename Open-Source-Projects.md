@@ -6,6 +6,7 @@
 
 - [Ahoy.js](https://github.com/ankane/ahoy.js) - Simple, powerful JavaScript analytics
 - [Chartkick.js](https://github.com/ankane/chartkick.js) - Create beautiful Javascript charts with minimal code
+- [React Chartkick](https://github.com/ankane/react-chartkick) - Create beautiful charts with one line in React
 - [Swipeout](https://github.com/ankane/swipeout) - Swipe-to-delete goodness for the mobile web
 
 ## PHP
@@ -65,6 +66,7 @@ Other
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby
 - [Clockwork Web](https://github.com/ankane/clockwork_web) - A web interface for Clockwork
 - [Errbase](https://github.com/ankane/errbase) - Common exception reporting for a variety of services
+- [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
 - [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
 - [Mailkick](https://github.com/ankane/mailkick) - Email subscriptions made easy
