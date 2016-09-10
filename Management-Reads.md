@@ -4,6 +4,7 @@
 
 - [Radical Candor](http://firstround.com/review/radical-candor-the-surprising-secret-to-being-a-good-boss/)
 - [101 Questions to Ask in One on Ones](http://jasonevanish.com/2014/05/29/101-questions-to-ask-in-1-on-1s/)
+- [My Best Manager Did This](http://ask.metafilter.com/300002/My-best-manager-did-this)
 
 ## Books
 
