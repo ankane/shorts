@@ -57,3 +57,5 @@ Latest projects
 - [Jetpack](https://github.com/ankane/jetpack) - Simple package management for R
 
 Full list of [open source projects](Open-Source-Projects.md)
+
+All code examples in this repo are public domain. Use them however you’d like :) (licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/))
