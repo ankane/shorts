@@ -40,4 +40,4 @@ Execution time: 0.027 ms
 
 If it’s not, run `ANALYZE VERBOSE table_name;` and try again.
 
-This reduced the size of one of our indexes by **7x!** :slot_machine:
+This reduced the size of one of our indexes at [Instacart](https://www.instacart.com) by **7x!** :slot_machine:
