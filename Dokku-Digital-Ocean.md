@@ -4,10 +4,16 @@
 
 ## Create Droplet
 
-DigitalOcean has a [great tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application) - the instructions are up-to-date, despite the notice.
+Create new droplet with Ubuntu 16.04. Be sure to use an SSH key.
 
-- Select **Dokku v0.4.4 on 14.04**
-- Be sure to use an SSH key
+## Install Dokku
+
+```sh
+wget https://raw.githubusercontent.com/dokku/dokku/v0.7.2/bootstrap.sh
+sudo DOKKU_TAG=v0.7.2 bash bootstrap.sh
+```
+
+And visit your server’s IP address in your browser to complete installation.
 
 If you have a domain, use virtualhost naming. Otherwise, Dokku will use different ports for each deploy of your app. You can add easily add a domain later.
 
@@ -25,7 +31,7 @@ sudo ufw enable
 [Automatic updates](https://help.ubuntu.com/14.04/serverguide/automatic-updates.html)
 
 ```sh
-sudo apt-get install unattended-upgrades
+sudo apt-get -y install unattended-upgrades
 echo 'APT::Periodic::Unattended-Upgrade "1";' >> /etc/apt/apt.conf.d/10periodic
 ```
 
@@ -160,12 +166,18 @@ dokku domains:add www.datakick.org
 
 ## SSL
 
+Get free SSL certificates thanks to [Let’s Encrypt](https://letsencrypt.org/). On the server, run:
+
 ```sh
-tar -cv server.crt server.key > archive-of-certs.tar
-dokku nginx:import-ssl < archive-of-certs.tar
+dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
 ```
 
-[More info](http://progrium.viewdocs.io/dokku/nginx)
+And locally, run:
+
+```sh
+dokku config:set --no-restart DOKKU_LETSENCRYPT_EMAIL=your@email.tld
+dokku letsencrypt
+```
 
 ## Memcached
 
