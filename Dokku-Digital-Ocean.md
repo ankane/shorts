@@ -88,12 +88,10 @@ git push dokku master
 
 ## Workers
 
-Dokku only runs web processes by default. If you have workers or other process types, install [dokku-shoreman](https://github.com/statianzo/dokku-shoreman).
+Dokku only runs web processes by default. If you have workers or other process types, use:
 
 ```sh
-git clone https://github.com/statianzo/dokku-shoreman.git /var/lib/dokku/plugins/dokku-shoreman
-dokku plugins-install
-dokku ps:rebuildall
+dokku ps:scale worker=1
 ```
 
 ## One-Off Jobs
@@ -170,6 +168,7 @@ Get free SSL certificates thanks to [Let’s Encrypt](https://letsencrypt.org/).
 
 ```sh
 dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+dokku letsencrypt:cron-job --add
 ```
 
 And locally, run:
