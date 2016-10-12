@@ -110,14 +110,10 @@ Two options
 2. Or create `/etc/cron.d/myapp` with:
 
   ```
-  * * * * * root /usr/local/bin/dokku run myapp rake task1
-  0 0 * * * root /usr/local/bin/dokku run myapp rake task2
-  ```
-
-  If choosing this option, include a job to clean containers.
-
-  ```
-  0 * * * * root /user/local/bin/dokku cleanup
+  PATH=/usr/local/bin:/usr/bin:/bin
+  SHELL=/bin/bash
+  * * * * * dokku dokku --rm run myapp rake task1
+  0 0 * * * dokku dokku --rm run myapp rake task2
   ```
 
 ## Custom Domains
