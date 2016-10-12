@@ -120,6 +120,28 @@ Two options
   0 * * * * root /user/local/bin/dokku cleanup
   ```
 
+## Custom Domains
+
+```sh
+dokku domains:add www.datakick.org
+```
+
+## SSL
+
+Get free SSL certificates thanks to [Let’s Encrypt](https://letsencrypt.org/). On the server, run:
+
+```sh
+dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+dokku letsencrypt:cron-job --add
+```
+
+And locally, run:
+
+```sh
+dokku config:set --no-restart DOKKU_LETSENCRYPT_EMAIL=your@email.tld
+dokku letsencrypt
+```
+
 ## Logging
 
 [Papertrail](https://papertrailapp.com) is great and has a free plan.
@@ -129,8 +151,9 @@ Two options
 Use [Logspout](https://github.com/gliderlabs/logspout).
 
 ```sh
-docker pull gliderlabs/logspout:latest
-docker run --restart=always -d --name=logspout -v=/var/run/docker.sock:/tmp/docker.sock -h $(hostname) gliderlabs/logspout syslog://logs.papertrailapp.com:12345
+dokku plugin:install https://github.com/michaelshobbs/dokku-logspout.git
+dokku logspout:server syslog+tls://logs.papertrailapp.com:12345
+dokku logspout:start
 ```
 
 ### Nginx
@@ -154,28 +177,6 @@ destination:
   host: logs.papertrailapp.com
   port: 12345
   protocol: tls
-```
-
-## Custom Domains
-
-```sh
-dokku domains:add www.datakick.org
-```
-
-## SSL
-
-Get free SSL certificates thanks to [Let’s Encrypt](https://letsencrypt.org/). On the server, run:
-
-```sh
-dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
-dokku letsencrypt:cron-job --add
-```
-
-And locally, run:
-
-```sh
-dokku config:set --no-restart DOKKU_LETSENCRYPT_EMAIL=your@email.tld
-dokku letsencrypt
 ```
 
 ## Memcached
