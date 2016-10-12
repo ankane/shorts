@@ -182,28 +182,12 @@ And run:
 remote_syslog
 ```
 
-## Memcached
-
-```sh
-git clone https://github.com/rlaneve/dokku-link /var/lib/dokku/plugins/link
-git clone https://github.com/jezdez/dokku-memcached-plugin /var/lib/dokku/plugins/memcached
-dokku plugins-install
-dokku memcached:create myapp
-dokku config:set myapp MEMCACHE_SERVERS=memcachedhost:11211
-```
-
-## Redis
-
-```sh
-git clone https://github.com/luxifer/dokku-redis-plugin /var/lib/dokku/plugins/redis
-dokku plugins-install
-dokku redis:create myapp
-```
-
 ## TODO
 
-- database
-- [monitoring](https://www.brianchristner.io/how-to-setup-docker-monitoring/)
+- Database
+- Memcached
+- Redis
+- [Monitoring](https://www.brianchristner.io/how-to-setup-docker-monitoring/)
 
 ## Bonus
 
