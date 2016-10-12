@@ -144,25 +144,22 @@ dokku letsencrypt
 
 ## Logging
 
-[Papertrail](https://papertrailapp.com) is great and has a free plan.
+Use syslog to ship your logs to a service. [Papertrail](https://papertrailapp.com) is great and has a free plan.
 
-### Apps
-
-Use [Logspout](https://github.com/gliderlabs/logspout).
+For apps, use:
 
 ```sh
 dokku plugin:install https://github.com/michaelshobbs/dokku-logspout.git
+dokku plugin:install https://github.com/michaelshobbs/dokku-hostname.git
 dokku logspout:server syslog+tls://logs.papertrailapp.com:12345
 dokku logspout:start
 ```
 
-### Nginx
-
-Install remote syslog
+For nginx, install [remote_syslog2](https://github.com/papertrail/remote_syslog2)
 
 ```sh
 cd /tmp
-wget https://github.com/papertrail/remote_syslog2/releases/download/v0.13/remote_syslog_linux_amd64.tar.gz
+wget https://github.com/papertrail/remote_syslog2/releases/download/v0.18/remote_syslog_linux_amd64.tar.gz
 tar xzf ./remote_syslog*.tar.gz
 cd remote_syslog
 sudo cp ./remote_syslog /usr/local/bin
@@ -177,6 +174,12 @@ destination:
   host: logs.papertrailapp.com
   port: 12345
   protocol: tls
+```
+
+And run:
+
+```sh
+remote_syslog
 ```
 
 ## Memcached
