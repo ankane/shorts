@@ -1,10 +1,10 @@
 # Host Your Own Postgres
 
-:elephant: Get running with Postgres in minutes
+:elephant: Get running with the last version of Postgres in minutes
 
 ## Set Up Server
 
-Spin up a new server with Ubuntu 14.04.
+Spin up a new server with Ubuntu 16.04.
 
 Firewall
 
@@ -13,10 +13,10 @@ sudo ufw allow ssh
 sudo ufw enable
 ```
 
-[Automatic updates](https://help.ubuntu.com/14.04/serverguide/automatic-updates.html)
+[Automatic updates](https://help.ubuntu.com/16.04/serverguide/automatic-updates.html)
 
 ```sh
-sudo apt-get install unattended-upgrades
+sudo apt-get -y install unattended-upgrades
 echo 'APT::Periodic::Unattended-Upgrade "1";' >> /etc/apt/apt.conf.d/10periodic
 ```
 
@@ -30,18 +30,18 @@ and select `None of the above`, then `UTC`.
 
 ## Install Postgres
 
-Install PostgreSQL 9.4
+Install PostgreSQL 9.6
 
 ```sh
-echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update > /dev/null
-sudo apt-get install -qq -y postgresql-9.4 postgresql-contrib
+sudo apt-get update
+sudo apt-get install -qq -y postgresql-9.6 postgresql-contrib
 ```
 
 ## Configure
 
-Edit `/etc/postgresql/9.4/main/postgresql.conf`.
+Edit `/etc/postgresql/9.6/main/postgresql.conf`.
 
 ```sh
 # general
@@ -54,7 +54,6 @@ log_temp_files = 0               # log all temp files
 # stats
 shared_preload_libraries = 'pg_stat_statements'
 pg_stat_statements.max = 1000
-pg_stat_statements.track = all
 ```
 
 ## Remote Connections
@@ -62,8 +61,9 @@ pg_stat_statements.track = all
 Enable remote connections if needed
 
 ```sh
-echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/9.4/main/pg_hba.conf
-sudo service postgresql reload
+echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/9.6/main/pg_hba.conf
+echo "listen_addresses = '*'" >> /etc/postgresql/9.6/main/postgresql.conf
+sudo service postgresql restart
 ```
 
 And update the firewall

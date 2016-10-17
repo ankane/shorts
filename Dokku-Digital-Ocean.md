@@ -28,7 +28,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-[Automatic updates](https://help.ubuntu.com/14.04/serverguide/automatic-updates.html)
+[Automatic updates](https://help.ubuntu.com/16.04/serverguide/automatic-updates.html)
 
 ```sh
 sudo apt-get -y install unattended-upgrades
@@ -151,7 +151,7 @@ dokku logspout:server syslog+tls://logs.papertrailapp.com:12345
 dokku logspout:start
 ```
 
-For nginx, install [remote_syslog2](https://github.com/papertrail/remote_syslog2)
+For nginx and other logs, install [remote_syslog2](https://github.com/papertrail/remote_syslog2)
 
 ```sh
 cd /tmp
@@ -166,6 +166,7 @@ Create `/etc/log_files.yml` with:
 ```sh
 files:
   - /var/log/nginx/*.log
+  - /var/log/unattended-upgrades/*.log
 destination:
   host: logs.papertrailapp.com
   port: 12345
@@ -178,11 +179,28 @@ And run:
 remote_syslog
 ```
 
+## Database
+
+Check out [Host Your Own Postgres](Host-Your-Own-Postgres.md).
+
+## Memcached
+
+```sh
+dokku plugin:install https://github.com/dokku/dokku-memcached.git
+dokku memcached:create lolipop
+dokku memcached:link lolipop myapp
+```
+
+## Redis
+
+```sh
+dokku plugin:install https://github.com/dokku/dokku-redis.git
+dokku redis:create lolipop
+dokku redis:link lolipop myapp
+```
+
 ## TODO
 
-- Database
-- Memcached
-- Redis
 - [Monitoring](https://www.brianchristner.io/how-to-setup-docker-monitoring/)
 
 ## Bonus
