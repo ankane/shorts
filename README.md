@@ -49,6 +49,7 @@ Guides
 
 Latest projects
 
+- [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 - [React Chartkick](https://github.com/ankane/react-chartkick) - Create beautiful charts with one line in React
 - [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
