@@ -32,6 +32,7 @@ ActiveRecord
 - [delete_in_batches](https://github.com/ankane/delete_in_batches) - The fastest way to delete 100k+ rows with ActiveRecord
 - [Groupdate](https://github.com/ankane/groupdate) - The simplest way to group temporal data
 - [Hightop](https://github.com/ankane/hightop) - A nice shortcut for group count queries
+- [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 
 Analytics
 
