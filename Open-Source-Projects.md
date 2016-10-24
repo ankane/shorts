@@ -39,6 +39,16 @@ Analytics
 - [Ahoy](https://github.com/ankane/ahoy) - Analytics for Rails
 - [Ahoy Email](https://github.com/ankane/ahoy_email) - Simple, powerful email tracking for Rails
 
+Data Visualization
+
+- [Blazer](https://github.com/ankane/blazer) - Open source business intelligence
+- [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby
+
+External Services
+
+- [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
+- [Moves](https://github.com/ankane/moves) - Ruby client for Moves
+
 Migrations
 
 - [g index](https://github.com/ankane/gindex) - Concurrent index migrations for Rails
@@ -61,18 +71,14 @@ Other
 - [ActiveJob Backport](https://github.com/ankane/activejob_backport) - Active Job backported to Rails 4.0 and 4.1
 - [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
 - [Benchmeth](https://github.com/ankane/benchmeth) - The super easy way to benchmark methods in a live application
-- [Blazer](https://github.com/ankane/blazer) - Open source business intelligence
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
 - [Camo](https://github.com/ankane/camo) - Ruby client for Camo, the SSL image proxy
-- [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby
 - [Clockwork Web](https://github.com/ankane/clockwork_web) - A web interface for Clockwork
 - [Errbase](https://github.com/ankane/errbase) - Common exception reporting for a variety of services
 - [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
-- [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
 - [Mailkick](https://github.com/ankane/mailkick) - Email subscriptions made easy
 - [Mainstreet](https://github.com/ankane/mainstreet) - A standard US address model for Rails
-- [Moves](https://github.com/ankane/moves) - Ruby client for Moves
 - [Notable](https://github.com/ankane/notable) - Extraordinary insight into your users and background jobs
 - [Notable Web](https://github.com/ankane/notable_web) - A web interface for Notable
 - [Postjoy](https://github.com/ankane/postjoy) - Postal codes made easy
@@ -81,7 +87,6 @@ Other
 - [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
 - [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
 - [TimeRange](https://github.com/ankane/timerange) - Time ranges for Ruby
-- [Toucan](https://github.com/ankane/toucan) - Real-time analytics in Redis
 
 ## SQL
 
