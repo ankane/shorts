@@ -17,4 +17,4 @@
 
 ## Advice
 
-> You have to be your team’s best ally and biggest challenger. You can’t be a great leader by care-taking alone. Push for their best work. [@marcprecipice](https://twitter.com/marcprecipice/status/791738286779736064)
+> You have to be your team’s best ally and biggest challenger. You can’t be a great leader by care-taking alone. Push for their best work. [@marcprecipice](https://twitter.com/i/moments/791738696978403328)
