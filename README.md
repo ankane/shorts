@@ -47,6 +47,10 @@ Guides
 - [Search Guide](https://github.com/ankane/search_guide)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
 
+Talks
+
+- [Tinderbox](http://www.meetup.com/tinderbox/events/202613592/), Feb 2015 - [Slides](https://speakerdeck.com/ankane/grocery-hacking)
+
 Latest projects
 
 - [Vue Chartkick](https://github.com/ankane/vue-chartkick) - Create beautiful charts with one line in Vue.js
