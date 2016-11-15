@@ -53,6 +53,7 @@ Talks
 
 Latest projects
 
+- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP Lookup for Ruby
 - [Vue Chartkick](https://github.com/ankane/vue-chartkick) - Create beautiful charts with one line in Vue.js
 - [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 - [React Chartkick](https://github.com/ankane/react-chartkick) - Create beautiful charts with one line in React

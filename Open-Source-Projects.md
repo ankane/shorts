@@ -84,6 +84,7 @@ Other
 - [Notable Web](https://github.com/ankane/notable_web) - A web interface for Notable
 - [Postjoy](https://github.com/ankane/postjoy) - Postal codes made easy
 - [Pretender](https://github.com/ankane/pretender) - Simple, powerful user impersonation for Rails
+- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP Lookup for Ruby
 - [Safely](https://github.com/ankane/safely) - Rescue and report exceptions in non-critical code
 - [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
 - [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
