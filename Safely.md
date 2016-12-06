@@ -23,7 +23,7 @@ function safely(nonCriticalCode) {
 Its advantages over typical exception handling are:
 
 1. It’s easier to write and debug code when errors aren’t caught in development and test environments
-2. It allows you to keep your reporting [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
+2. It allows you to keep reporting [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
 
 It’s recommended to mark exceptions when reporting so it’s clear they were handled with this pattern. One way of doing this is to prefix the exception message with `[safely]`.
 
