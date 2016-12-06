@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [The Safely Pattern](Safely.md)
 - [Large Text Indexes in Postgres](https://medium.com/@ankane/large-text-indexes-in-postgres-5d7f1677f89f)
 - [navigator.sendBeacon and Rails](Navigator-Send-Beacon-Rails.md)
 - [Installing Presto for Mac](Presto-Mac.md)
