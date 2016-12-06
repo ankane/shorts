@@ -5,6 +5,21 @@ The Safely Pattern is a simple one. It allows you to tag non-critical code by wr
 1. Raise exceptions in development and test environments
 2. Catch and report exceptions in other environments
 
+Here’s a basic implementation in JavaScript:
+
+```javascript
+function safely(nonCriticalCode) {
+  try {
+    nonCriticalCode();
+  } catch (e) {
+    if (env === "development" || env === "test") {
+      throw(e);
+    }
+    report(e);
+  }
+}
+```
+
 Its advantages over typical exception handling are:
 
 1. It’s easier to write and debug code when errors aren’t caught in development and test environments
