@@ -1,6 +1,6 @@
 # The Safely Pattern
 
-The Safely Pattern is a simple one. It allows you to tag non-critical code by wrapping it in a function or block. It’s built on top of exception handling and follows these rules:
+The Safely Pattern is a simple one. It allows you to tag non-critical code by wrapping it in a function. It’s built on top of exception handling and follows these rules:
 
 1. Raise exceptions in development and test environments
 2. Catch and report exceptions in other environments
