@@ -93,7 +93,7 @@ Also, we want to read from master by default so have to patch Makara. Create an 
 ```ruby
 Makara::Cache.store = :noop
 
-class DefaultToMasterPool
+module DefaultToMasterPool
   def _appropriate_pool(*args)
     return @master_pool unless Thread.current[:distribute_reads]
     super
