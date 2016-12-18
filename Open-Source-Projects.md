@@ -39,6 +39,7 @@ Analytics
 
 - [Ahoy](https://github.com/ankane/ahoy) - Analytics for Rails
 - [Ahoy Email](https://github.com/ankane/ahoy_email) - Simple, powerful email tracking for Rails
+- [Field Test](https://github.com/ankane/field_test) - A/B Testing for Rails
 
 Data Visualization
 
