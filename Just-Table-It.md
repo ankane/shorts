@@ -4,7 +4,7 @@ Donald Knuth said it best:
 
 > Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. **We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.**
 
-You can mistakenly optimize by trying to choose the “right” technology. Often, the best choice is right in front of you: your database. Relational database scale pretty well, despite what you’ve been led to believe in recent years. Don’t introduce a new data store into your stack if you don’t need to, and don’t store interesting data in logs unless you can easily query them. Generally:
+When it comes to data, you can mistakenly optimize by trying to choose the “right” technology. Often, the best choice is right in front of you: your database. Relational database scale pretty well, despite what you’ve been led to believe in recent years. Don’t introduce a new data store into your stack if you don’t need to, and don’t store interesting data in logs unless you can easily query them. Generally:
 
 **If you need to query data, throw it in a table.**
 
