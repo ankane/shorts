@@ -33,3 +33,7 @@ We’ve open sourced much of the technology we use to do the above.
 And
 
 - [Blazer](https://github.com/ankane/blazer) to analyze the data
+
+### References
+
+Knuth quote from [Structured Programming with go to Statements](https://www.cs.sjsu.edu/~mak/CS185C/KnuthStructuredProgrammingGoTo.pdf), 1974.
