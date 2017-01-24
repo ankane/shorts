@@ -105,7 +105,7 @@ Other
 ## Guides
 
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
+- [Practical Search](https://github.com/ankane/practical-search)
 - [Production Rails](https://github.com/ankane/production_rails)
-- [Search Guide](https://github.com/ankane/search_guide)
 - [Secure Rails](https://github.com/ankane/secure_rails)
 - [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)

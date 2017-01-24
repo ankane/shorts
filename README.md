@@ -46,7 +46,7 @@ Guides
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Secure Rails](https://github.com/ankane/secure_rails)
 - [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
-- [Search Guide](https://github.com/ankane/search_guide)
+- [Practical Search](https://github.com/ankane/practical-search)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
 
 Talks
