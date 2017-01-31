@@ -18,3 +18,7 @@
 ## Advice
 
 > You have to be your team’s best ally and biggest challenger. You can’t be a great leader by care-taking alone. Push for their best work. [@marcprecipice](https://twitter.com/i/moments/791738696978403328)
+
+## Culture
+
+- [Netflix Culture Deck](http://www.slideshare.net/reed2001/culture-1798664/28-All_of_Us_are_Responsiblefor)
