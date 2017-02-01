@@ -21,4 +21,4 @@
 
 ## Culture
 
-- [Netflix Culture Deck](http://www.slideshare.net/reed2001/culture-1798664/28-All_of_Us_are_Responsiblefor)
+- [Netflix Culture Deck](http://www.slideshare.net/reed2001/culture-1798664)
