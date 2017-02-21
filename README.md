@@ -55,11 +55,9 @@ Talks
 
 Latest projects
 
-- [Field Test](https://github.com/ankane/field_test) - A/B Testing for Rails
-- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP Lookup for Ruby
-- [Vue Chartkick](https://github.com/ankane/vue-chartkick) - Create beautiful charts with one line in Vue.js
-- [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
-- [React Chartkick](https://github.com/ankane/react-chartkick) - Create beautiful charts with one line in React
+- [Quirk](https://github.com/ankane/quirk) - Your data science sidekick
+- [Field Test](https://github.com/ankane/field_test) - A/B testing for Rails
+- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 
 Full list of [open source projects](Open-Source-Projects.md)
 

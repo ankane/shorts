@@ -20,6 +20,10 @@
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine
 
+## Python
+
+- [Quirk](https://github.com/ankane/quirk) - Your data science sidekick
+
 ## R
 
 - [Jetpack](https://github.com/ankane/jetpack) - Simple package manager for R
@@ -39,7 +43,7 @@ Analytics
 
 - [Ahoy](https://github.com/ankane/ahoy) - Analytics for Rails
 - [Ahoy Email](https://github.com/ankane/ahoy_email) - Simple, powerful email tracking for Rails
-- [Field Test](https://github.com/ankane/field_test) - A/B Testing for Rails
+- [Field Test](https://github.com/ankane/field_test) - A/B testing for Rails
 
 Data Visualization
 
@@ -85,7 +89,7 @@ Other
 - [Notable Web](https://github.com/ankane/notable_web) - A web interface for Notable
 - [Postjoy](https://github.com/ankane/postjoy) - Postal codes made easy
 - [Pretender](https://github.com/ankane/pretender) - Simple, powerful user impersonation for Rails
-- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP Lookup for Ruby
+- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 - [Safely](https://github.com/ankane/safely) - Rescue and report exceptions in non-critical code
 - [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
 - [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
