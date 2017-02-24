@@ -22,7 +22,7 @@
 
 ## Python
 
-- [Quirk](https://github.com/ankane/quirk) - Your data science sidekick
+- [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code
 
 ## R
 

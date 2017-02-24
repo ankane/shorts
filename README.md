@@ -55,7 +55,7 @@ Talks
 
 Latest projects
 
-- [Quirk](https://github.com/ankane/quirk) - Your data science sidekick
+- [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code
 - [Field Test](https://github.com/ankane/field_test) - A/B testing for Rails
 - [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 
