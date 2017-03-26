@@ -32,7 +32,7 @@ The winner was [Makara](https://github.com/taskrabbit/makara) - it handles failo
 First, install Makara.
 
 ```ruby
-gem 'makara', github: 'taskrabbit/makara'
+gem 'makara'
 ```
 
 There are 3 important `ENV` variables in our setup.
@@ -60,19 +60,9 @@ development: &default
     connections:
       - role: master
         name: master
-        <% uri = URI.parse(ENV["DATABASE_URL"]) %>
-        host: <%= uri.host %>
-        port: <%= uri.port %>
-        database: <%= uri.path.tr("/", "") %>
-        username: <%= uri.user %>
-        password: <%= uri.password %>
+        url: <%= ENV["DATABASE_URL"] %>
       - name: replica
-        <% uri = URI.parse(ENV["REPLICA_DATABASE_URL"]) %>
-        host: <%= uri.host %>
-        port: <%= uri.port %>
-        database: <%= uri.path.tr("/", "") %>
-        username: <%= uri.user %>
-        password: <%= uri.password %>
+        url: <%= ENV["REPLICA_DATABASE_URL"] %>
   <% else %>
   adapter: postgresql
   url: <%= ENV["DATABASE_URL"] %>
@@ -141,16 +131,6 @@ In the Rails console, run:
 ```ruby
 User.first                       # master
 distribute_reads { User.last }   # replica
-```
-
-You’re set.
-
-## New Relic
-
-There’s a [big performance issue](https://github.com/newrelic/rpm/commit/82d2777a4222deb746467783eb0226ad60d307e7) when the latest versions of New Relic and Makara unite.  Use the `dev` branch to get around this.
-
-```ruby
-gem 'newreplic_rpm', github: 'newrelic/rpm', branch: 'dev'
 ```
 
 :heart: Happy scaling
