@@ -7,7 +7,7 @@ One of the easier ways to scale your database is to distribute reads to replicas
 Here’s the desired behavior:
 
 ```ruby
-User.find(1)                  # master
+User.find(1)                  # primary
 
 distribute_reads do
   # use replica for reads
@@ -15,9 +15,9 @@ distribute_reads do
   User.find(2)                # replica
 
   # until a write
-  # then switch to master
-  User.create!                # master
-  User.last                   # master
+  # then switch to primary
+  User.create!                # primary
+  User.last                   # primary
 end
 ```
 
@@ -37,8 +37,8 @@ gem 'makara'
 
 There are 3 important `ENV` variables in our setup.
 
-- `DATABASE_URL` - master database
-- `REPLICA_DATABASE_URL` - replica database (can use the master database in development)
+- `DATABASE_URL` - primary database
+- `REPLICA_DATABASE_URL` - replica database (can use the primary database in development)
 - `MAKARA` - feature flag for a smooth rollout
 
 Here are sample values:
@@ -59,7 +59,7 @@ development: &default
     sticky: true
     connections:
       - role: master
-        name: master
+        name: primary
         url: <%= ENV["DATABASE_URL"] %>
       - name: replica
         url: <%= ENV["REPLICA_DATABASE_URL"] %>
@@ -78,19 +78,19 @@ We don’t use the middleware, so we remove it by adding to `config/application.
 config.middleware.delete Makara::Middleware
 ```
 
-Also, we want to read from master by default so have to patch Makara. Create an initializer `config/initializers/makara.rb` with:
+Also, we want to read from primary by default so have to patch Makara. Create an initializer `config/initializers/makara.rb` with:
 
 ```ruby
 Makara::Cache.store = :noop
 
-module DefaultToMasterPool
+module DefaultToPrimary
   def _appropriate_pool(*args)
     return @master_pool unless Thread.current[:distribute_reads]
     super
   end
 end
 
-Makara::Proxy.send :prepend, DefaultToMasterPool
+Makara::Proxy.send :prepend, DefaultToPrimary
 
 module DistributeReads
   def distribute_reads
@@ -129,7 +129,7 @@ end
 In the Rails console, run:
 
 ```ruby
-User.first                       # master
+User.first                       # primary
 distribute_reads { User.last }   # replica
 ```
 
