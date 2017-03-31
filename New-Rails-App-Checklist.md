@@ -38,7 +38,7 @@ Disable unwanted generators
 config.generators do |g|
   g.assets false
   g.helper false
-  g.test_framework false
+  g.test_framework nil
 end
 ```
 
