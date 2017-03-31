@@ -16,11 +16,11 @@ Create a new app
 rails new <name> -d postgresql --skip-turbolinks
 ```
 
-Don’t fret too much over the name - you can easily update it later.
+Don’t fret too much over the name - you can easily update it later
 
 ## Version Control
 
-Add git
+Add Git
 
 ```sh
 git init
