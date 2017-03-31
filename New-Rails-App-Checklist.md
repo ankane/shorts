@@ -1,6 +1,6 @@
 # New Rails App Checklist
 
-My personal checklist for new Rails apps
+How I personally start new apps
 
 ## Create Project
 
@@ -32,7 +32,7 @@ git commit -m "Hello app"
 
 Make a few updates to `config/application.rb`
 
-Disable unwanted generators - no TDD here :)
+Disable unwanted generators
 
 ```ruby
 config.generators do |g|
