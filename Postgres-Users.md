@@ -36,7 +36,7 @@ PostgreSQL uses the concept of *roles* to manage permissions. From [the docs](ht
 
 > A role can be thought of as either a database user, or a group of database users
 
-Users are simply roles with a password and permission to log in.
+A user is simply a role with a password and permission to log in.
 
 The approach we’ll take is to create a group and add users to it. This makes it easy to rotate credentials in the future: just add a second user to the group, update your apps, and then remove the original user.
 
