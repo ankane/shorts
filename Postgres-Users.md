@@ -92,7 +92,7 @@ ALTER DEFAULT PRIVILEGES FOR ROLE migrations IN SCHEMA public
 ALTER ROLE app SET statement_timeout TO '30s';
 ```
 
-**Note:** In the last two queries, you need to reference the group used for migrations.
+**Note:** The default privileges statements reference the group used for migrations.
 
 Then, create a user with:
 
