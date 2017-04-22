@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Three Types of Postgres Users, and How to Create Them](Postgres-Users.md)
 - [New Rails App Checklist](New-Rails-App-Checklist.md)
 - [Just Table It](Just-Table-It.md)
 - [The Safely Pattern](Safely.md)
