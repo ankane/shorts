@@ -60,7 +60,11 @@ Create a user with:
 
 ```sql
 CREATE ROLE migrator WITH LOGIN ENCRYPTED PASSWORD 'secret' IN ROLE migrations;
+
+ALTER ROLE migrator SET role = 'migrations';
 ```
+
+The last statement ensure tables created by the user are owned by the group.
 
 You can generate a nice password with:
 
