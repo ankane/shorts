@@ -61,7 +61,7 @@ Create a user with:
 ```sql
 CREATE ROLE migrator WITH LOGIN ENCRYPTED PASSWORD 'secret' IN ROLE migrations;
 
-ALTER ROLE migrator SET role = 'migrations';
+ALTER ROLE migrator SET role TO 'migrations';
 ```
 
 The last statement ensures tables created by the user are owned by the group.
