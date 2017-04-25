@@ -42,7 +42,7 @@ The approach we’ll take is to create a group and add users to it. This makes i
 
 ## Migrations
 
-First, we need a group to manage the schema. You could use a superuser, but this isn’t a great idea, as superusers can access all databases, change permissions, and create new roles.
+First, we need a group to manage the schema. You could use a superuser, but this isn’t a great idea, as superusers can access all databases, change permissions, and create new roles. Instead, let’s create a new group.
 
 ```sql
 CREATE ROLE migrations;
@@ -54,9 +54,9 @@ GRANT ALL ON SCHEMA public TO migrations;
 ALTER ROLE migrations SET lock_timeout TO '5s';
 ```
 
-We also set a lock timeout so migrations don’t disrupt normal database activity while attempting to acquire a lock.
+We set a lock timeout so migrations don’t disrupt normal database activity while attempting to acquire a lock.
 
-Create a user with:
+Now, we can create a user who’s a member of the group.
 
 ```sql
 CREATE ROLE migrator WITH LOGIN ENCRYPTED PASSWORD 'secret' IN ROLE migrations;
@@ -66,7 +66,7 @@ ALTER ROLE migrator SET role TO 'migrations';
 
 The last statement ensures tables created by the user are owned by the group.
 
-You can generate a nice password with:
+You can generate a nice password from the command line with:
 
 ```sh
 echo $(cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
