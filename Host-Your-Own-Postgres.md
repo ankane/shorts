@@ -94,7 +94,7 @@ CREATE DATABASE myapp_production OWNER myapp;
 Generate a random password with:
 
 ```sh
-echo $(cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
 ```
 
 ## Backups

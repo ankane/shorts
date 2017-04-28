@@ -69,7 +69,7 @@ The last statement ensures tables created by the user are owned by the group.
 You can generate a nice password from the command line with:
 
 ```sh
-echo $(cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
 ```
 
 ## App
