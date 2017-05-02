@@ -1,5 +1,9 @@
 # Scaling Reads
 
+**Note:** This approach is now packaged into [a gem](https://github.com/ankane/distribute_reads) :gem:
+
+---
+
 One of the easier ways to scale your database is to distribute reads to replicas.
 
 ## Desire
