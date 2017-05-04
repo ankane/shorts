@@ -1,6 +1,6 @@
 # Bootstrapping Postgres Users
 
-Setting up database users for an app can be challenging if you don’t do it often. Good permissions add a layer of security and can minimize the chances of developer mistakes. Following the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege), users should have the privileges they need and nothing more.
+Setting up database users for an app can be challenging if you don’t do it often. Good permissions add a layer of security and can minimize the chances of developer mistakes. Following the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege), we want to give users only the privileges they need.
 
 The three types of users we’ll cover are:
 
