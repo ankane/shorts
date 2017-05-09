@@ -35,6 +35,7 @@ ActiveRecord
 
 - [ActiveMedian](https://github.com/ankane/active_median) - Median for ActiveRecord
 - [delete_in_batches](https://github.com/ankane/delete_in_batches) - The fastest way to delete 100k+ rows with ActiveRecord
+- [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
 - [Groupdate](https://github.com/ankane/groupdate) - The simplest way to group temporal data
 - [Hightop](https://github.com/ankane/hightop) - A nice shortcut for group count queries
 - [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
@@ -80,6 +81,7 @@ Other
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
 - [Camo](https://github.com/ankane/camo) - Ruby client for Camo, the SSL image proxy
 - [Clockwork Web](https://github.com/ankane/clockwork_web) - A web interface for Clockwork
+- [Drill Sergeant](https://github.com/ankane/drill-sergeant) - Ruby client for Apache Drill
 - [Errbase](https://github.com/ankane/errbase) - Common exception reporting for a variety of services
 - [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
 - [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
