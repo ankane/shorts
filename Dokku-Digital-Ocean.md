@@ -17,25 +17,29 @@ And visit your server’s IP address in your browser to complete installation.
 
 If you have a domain, use virtualhost naming. Otherwise, Dokku will use different ports for each deploy of your app. You can add easily add a domain later.
 
+## Add a Firewall
+
+Create a [firewall](https://cloud.digitalocean.com/networking/firewalls)
+
+Inbound Rules
+
+- SSH from your [external IP](https://www.google.com/search?q=external+ip)
+- HTTP and HTTPS from all IPv4 and all IPv6
+
+Outbound Rules
+
+- ICMP, all TCP, and all UDP from all IPv4 and all IPv6
+
 ## Set Up Server
 
-Firewall
-
-```sh
-sudo ufw allow ssh
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw enable
-```
-
-[Automatic updates](https://help.ubuntu.com/16.04/serverguide/automatic-updates.html)
+Turn on [automatic updates](https://help.ubuntu.com/16.04/serverguide/automatic-updates.html)
 
 ```sh
 sudo apt-get -y install unattended-upgrades
 echo 'APT::Periodic::Unattended-Upgrade "1";' >> /etc/apt/apt.conf.d/10periodic
 ```
 
-Swap
+Enable swap
 
 ```sh
 sudo fallocate -l 4G /swapfile
@@ -45,7 +49,7 @@ sudo swapon /swapfile
 sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'
 ```
 
-Time zone
+Configure time zone
 
 ```sh
 sudo dpkg-reconfigure tzdata
