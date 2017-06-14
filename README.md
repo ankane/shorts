@@ -8,7 +8,7 @@ Featured
 
 Short, random tutorials
 
-- [Bootstrapping Postgres Users](Postgres-Users.md)
+- [Bootstrapping Postgres Users](https://tech.instacart.com/bootstrapping-postgres-users-cd594e5f28e9)
 - [New Rails App Checklist](New-Rails-App-Checklist.md)
 - [Just Table It](Just-Table-It.md)
 - [The Safely Pattern](Safely.md)
