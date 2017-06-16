@@ -2,7 +2,7 @@
 
 Featured
 
-- [Learn Data Science](Learn-Data-Science.md)
+- [Adventures and Lessons in Postgres](Scaling-Postgres.md)
 - [Production Rails](https://github.com/ankane/production_rails)
 - [Dokku on DigitalOcean](Dokku-Digital-Ocean.md)
 
