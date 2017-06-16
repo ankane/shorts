@@ -1,4 +1,4 @@
-# Adventures and Lessons in Postgres
+# Adventures and Lessons in Postgres [Draft]
 
 At Instacart, we depend heavily on Postgres. As our database cluster has grown, we’ve learned a number of important lessons along the way.
 
