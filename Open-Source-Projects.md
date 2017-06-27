@@ -16,6 +16,7 @@
 
 ## Postgres
 
+- [Dexter](https://github.com/ankane/dexter) - The automatic indexer for Postgres
 - [PgHero](https://github.com/ankane/pghero) - The missing dashboard for Postgres
 - [pgslice](https://github.com/ankane/pgslice) - Postgres partitioning as easy as pie
 - [pgsync](https://github.com/ankane/pgsync) - Postgres data -> your local machine

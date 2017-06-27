@@ -2,9 +2,9 @@
 
 Featured
 
+- [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
 - [Adventures and Lessons in Postgres](Scaling-Postgres.md)
 - [Level Up Your Search](https://github.com/ankane/practical-search/blob/master/Level-Up-Your-Search.md)
-- [Production Rails](https://github.com/ankane/production_rails)
 
 Short, random tutorials
 
@@ -58,11 +58,9 @@ Talks
 
 Latest projects
 
+- [Dexter](https://github.com/ankane/dexter) - The automatic indexer for Postgres
 - [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
-- [Drill Sergeant](https://github.com/ankane/drill-sergeant) - Ruby client for Apache Drill
 - [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code
-- [Field Test](https://github.com/ankane/field_test) - A/B testing for Rails
-- [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 
 Full list of [open source projects](Open-Source-Projects.md)
 
