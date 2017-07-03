@@ -4,7 +4,7 @@ Featured
 
 - [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
 - [Adventures and Lessons in Postgres](Scaling-Postgres.md)
-- [Level Up Your Search](https://github.com/ankane/practical-search/blob/master/Level-Up-Your-Search.md)
+- [Practical Search](https://github.com/ankane/practical-search)
 
 Short, random tutorials
 
