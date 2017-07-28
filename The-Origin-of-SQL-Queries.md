@@ -51,9 +51,7 @@ dbGetQuery <- function(con, statement)
 {
   path <- sub(".*=", "", commandArgs()[4])
   script <- normalizePath(paste0(dirname(path), "/", path))
-  statement <- paste0("/*application:Instacart,script:", script, "*/ ", statement)
+  statement <- paste0(statement, " /*application:Instacart,script:", script, "*/")
   RPostgreSQL::dbGetQuery(con, statement)
 }
 ```
-
-We add comments to the beginning since pg_stat_statements truncates long queries before PostgreSQL 9.4.
