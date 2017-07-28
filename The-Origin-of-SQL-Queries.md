@@ -7,14 +7,14 @@ Do you know what part of your application is generating that time-consuming data
 Turn:
 
 ```sql
-SELECT * FROM "pandas" WHERE "name" ILIKE 'sad%'
+SELECT * FROM pandas WHERE mood ILIKE 'sad%'
 ```
 
 into
 
 ```sql
-SELECT * FROM "pandas" WHERE "name" ILIKE 'happy%'
-/*application:Instacart,controller:pandas,action:eating*/
+SELECT * FROM pandas WHERE mood ILIKE 'happy%'
+/*application:Nature,job:EatBambooJob*/
 ```
 
 Whether you use [PgHero](https://github.com/ankane/pghero), [pg_stat_statements](http://www.postgresql.org/docs/9.4/static/pgstatstatements.html) on its own, or `log_min_duration_statement` to log slow queries, comments can help!
@@ -51,7 +51,7 @@ dbGetQuery <- function(con, statement)
 {
   path <- sub(".*=", "", commandArgs()[4])
   script <- normalizePath(paste0(dirname(path), "/", path))
-  statement <- paste0(statement, " /*application:Instacart,script:", script, "*/")
+  statement <- paste0(statement, " /*application:Nature,script:", script, "*/")
   RPostgreSQL::dbGetQuery(con, statement)
 }
 ```
