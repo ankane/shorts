@@ -7,13 +7,13 @@ Do you know what part of your application is generating that time-consuming data
 Turn:
 
 ```sql
-SELECT * FROM pandas WHERE mood ILIKE 'sad%'
+SELECT * FROM pandas WHERE mood = 'sad'
 ```
 
 into
 
 ```sql
-SELECT * FROM pandas WHERE mood ILIKE 'happy%'
+SELECT * FROM pandas WHERE mood = 'happy'
 /*application:Nature,job:EatBambooJob*/
 ```
 
