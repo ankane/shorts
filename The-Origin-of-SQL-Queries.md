@@ -28,13 +28,14 @@ module Marginalia
   module Comment
     # add namespace to controller
     def self.controller
-      if marginalia_controller.respond_to? :controller_path
+      if marginalia_controller.respond_to?(:controller_path)
         marginalia_controller.controller_path
       end
     end
   end
 end
 
+# add job
 Marginalia::Comment.components << :job
 ```
 
