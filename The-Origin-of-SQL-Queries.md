@@ -35,7 +35,7 @@ module Marginalia
   end
 end
 
-Marginalia::Comment.components = [:application, :controller, :action, :job]
+Marginalia::Comment.components << :job
 ```
 
 ## Python
