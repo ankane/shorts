@@ -58,3 +58,7 @@ dbGetQuery <- function(con, statement)
   RPostgreSQL::dbGetQuery(con, statement)
 }
 ```
+
+## Other Languages and Frameworks
+
+Please [submit a PR](https://github.com/ankane/shorts/pulls)!
