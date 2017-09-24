@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Client-Side Encryption with AWS and Ruby](AWS-Client-Side-Encryption.md)
 - [Autocomplete](https://github.com/ankane/practical-search/blob/master/Autocomplete.md)
 - [Bootstrapping Postgres Users](https://tech.instacart.com/bootstrapping-postgres-users-cd594e5f28e9)
 - [New Rails App Checklist](New-Rails-App-Checklist.md)
@@ -60,6 +61,7 @@ Talks
 
 Latest projects
 
+- [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [Dexter](https://github.com/ankane/dexter) - The automatic indexer for Postgres
 - [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
 - [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code

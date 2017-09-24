@@ -24,6 +24,7 @@
 ## Python
 
 - [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code
+- [s3tk](https://github.com/ankane/s3tk) - A security toolkit for Amazon S3
 
 ## R
 
@@ -39,6 +40,7 @@ ActiveRecord
 - [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
 - [Groupdate](https://github.com/ankane/groupdate) - The simplest way to group temporal data
 - [Hightop](https://github.com/ankane/hightop) - A nice shortcut for group count queries
+- [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 
 Analytics
