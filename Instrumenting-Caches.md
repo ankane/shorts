@@ -6,32 +6,34 @@ Love seeing how long ActiveRecord queries take and want the same for your cache 
 
 Create `config/initializers/cache_instrumenters.rb` and add the code below.
 
-## Rails Cache
-
-Silence the default logging
+## Memcached
 
 ```ruby
-Rails.cache.silence!
-```
-
-and
-
-```ruby
-class CacheInstrumenter < ActiveSupport::LogSubscriber
-  def cache_read(event)
-    return unless logger.debug?
-    name = "%s (%.2fms)" % ["Cache Read", event.duration]
-    debug "  #{color(name, BLUE, true)} #{event.payload[:key]} #{event.payload.except(:key)}"
-  end
-
-  def cache_write(event)
-    return unless logger.debug?
-    name = "%s (%.2fms)" % ["Cache Write", event.duration]
-    debug "  #{color(name, BLUE, true)} #{event.payload[:key]}"
+module MemcachedNotifications
+  def request(op, *args)
+    payload = {
+      op: op,
+      args: args
+    }
+    ActiveSupport::Notifications.instrument("request.memcached", payload) do
+      super
+    end
   end
 end
 
-CacheInstrumenter.attach_to(:active_support) unless Rails.env.production?
+class MemcachedInstrumenter < ActiveSupport::LogSubscriber
+  def request(event)
+    return unless logger.debug?
+
+    name = "%s (%.2fms)" % ["Memcached #{event.payload[:op].to_s.titleize}", event.duration]
+    debug "  #{color(name, BLUE, true)} #{event.payload[:args].join(" ")}"
+  end
+end
+
+unless Rails.env.production?
+  Dalli::Server.prepend(MemcachedNotifications)
+  MemcachedInstrumenter.attach_to(:memcached)
+end
 ```
 
 ## Redis
