@@ -55,7 +55,7 @@ Guides
 
 Talks
 
-- [PostgresOpen](https://2017.postgresopen.org/), Sep 2017 - [Slides](https://speakerdeck.com/ankane/how-postgres-could-index-itself)
+- [PostgresOpen](https://2017.postgresopen.org/), Sep 2017 - [Video](https://www.youtube.com/watch?v=Mni_1yTaNbE), [Slides](https://speakerdeck.com/ankane/how-postgres-could-index-itself)
 - [Tinderbox](http://www.meetup.com/tinderbox/events/202613592/), Feb 2015 - [Slides](https://speakerdeck.com/ankane/grocery-hacking)
 - Instacart Open House, Oct 2014 - [Slides](https://speakerdeck.com/ankane/from-the-store-to-your-door)
 
