@@ -61,10 +61,9 @@ Talks
 
 Latest projects
 
+- [s3tk](https://github.com/ankane/s3tk) - A security toolkit for Amazon S3
 - [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
-- [Dexter](https://github.com/ankane/dexter) - The automatic indexer for Postgres
-- [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
-- [Quirk](https://github.com/ankane/quirk) - Build powerful predictive models with a few lines of code
+- [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
 
 Full list of [open source projects](Open-Source-Projects.md)
 

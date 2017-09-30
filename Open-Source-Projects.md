@@ -82,6 +82,7 @@ Other
 - [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
 - [Benchmeth](https://github.com/ankane/benchmeth) - The super easy way to benchmark methods in a live application
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
+- [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
 - [Camo](https://github.com/ankane/camo) - Ruby client for Camo, the SSL image proxy
 - [Clockwork Web](https://github.com/ankane/clockwork_web) - A web interface for Clockwork
 - [Drill Sergeant](https://github.com/ankane/drill-sergeant) - Ruby client for Apache Drill
