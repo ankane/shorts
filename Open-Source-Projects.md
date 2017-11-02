@@ -41,6 +41,7 @@ ActiveRecord
 - [Groupdate](https://github.com/ankane/groupdate) - The simplest way to group temporal data
 - [Hightop](https://github.com/ankane/hightop) - A nice shortcut for group count queries
 - [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
+- [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
 - [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 
 Analytics

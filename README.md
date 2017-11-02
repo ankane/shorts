@@ -61,6 +61,7 @@ Talks
 
 Latest projects
 
+- [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
 - [s3tk](https://github.com/ankane/s3tk) - A security toolkit for Amazon S3
 - [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
