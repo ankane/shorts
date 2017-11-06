@@ -94,6 +94,7 @@ Other
 - [Mainstreet](https://github.com/ankane/mainstreet) - A standard US address model for Rails
 - [Notable](https://github.com/ankane/notable) - Extraordinary insight into your users and background jobs
 - [Notable Web](https://github.com/ankane/notable_web) - A web interface for Notable
+- [Ownership](https://github.com/ankane/ownership) - Code ownership for your Rails app
 - [Postjoy](https://github.com/ankane/postjoy) - Postal codes made easy
 - [Pretender](https://github.com/ankane/pretender) - Simple, powerful user impersonation for Rails
 - [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
