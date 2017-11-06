@@ -9,6 +9,7 @@ Featured
 Short, random tutorials
 
 - [A Short Guide to Metrics](Short-Guide-to-Metrics.md)
+- [Trying Out Vault for Postgres Credentials](Trying-Out-Vault.md)
 - [Client-Side Encryption with AWS and Ruby](AWS-Client-Side-Encryption.md)
 - [Autocomplete](https://github.com/ankane/practical-search/blob/master/Autocomplete.md)
 - [Bootstrapping Postgres Users](https://tech.instacart.com/bootstrapping-postgres-users-cd594e5f28e9)
