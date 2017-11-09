@@ -81,6 +81,7 @@ Other
 
 - [ActiveJob Backport](https://github.com/ankane/activejob_backport) - Active Job backported to Rails 4.0 and 4.1
 - [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
+- [AuthTrail](https://github.com/ankane/authtrail) - Track Devise login activity
 - [Benchmeth](https://github.com/ankane/benchmeth) - The super easy way to benchmark methods in a live application
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
 - [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
