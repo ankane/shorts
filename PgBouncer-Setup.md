@@ -10,15 +10,18 @@ Here’s the flow:
 Web app -> PgBouncer -> Postgres
 ```
 
-You can install PgBouncer on the same server as Postgres or a separate server.  For Amazon RDS, you won’t have shell access to the database server, so you’ll need to spin up another EC2 instance to run PgBouncer.
+You can install PgBouncer on the same server as Postgres or a separate server. For Amazon RDS, you won’t have shell access to the database server, so you’ll need to spin up another EC2 instance to run PgBouncer.
 
 ```
 Web app -> EC2 running PgBouncer -> RDS instance
 ```
 
-Start by launching a new instance of Ubuntu Server 14.04 LTS. Once the server is ready, ssh in and run:
+Start by launching a new instance of Ubuntu Server 16.04 LTS. Once the server is ready, ssh in. For the latest version of PgBouncer, we’ll use the [official Postgres APT repository](https://wiki.postgresql.org/wiki/Apt).
 
 ```sh
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
 sudo apt-get install pgbouncer
 ```
 
@@ -67,21 +70,13 @@ Append to both `/etc/pam.d/common-session` and `/etc/pam.d/common-session-nonint
 session required pam_limits.so
 ```
 
-## Startup
-
-Load PgBouncer on startup.
-
-Append to `/etc/default/pgbouncer`:
-
-```
-START=1
-```
-
-## Start Services
+## Start the Service
 
 ```sh
-su postgres -c 'service pgbouncer start'
+sudo service pgbouncer start
 ```
+
+Then reboot the server and confirm the process comes back up.
 
 ## Test
 
@@ -101,6 +96,6 @@ To use a [statement timeout](http://www.postgresql.org/docs/9.4/static/runtime-c
 ALTER ROLE USERNAME1 SET statement_timeout = 5000;
 ```
 
-## TODO
+## Congrats
 
-- shell script to do all of this
+You’ve successfully set up PgBouncer.
