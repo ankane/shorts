@@ -2,11 +2,11 @@
 
 Securing database traffic inside your own network can be a great step for defense in depth. It’s also a necessity for [Zero Trust Networks](https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194).
 
-Amazon RDS supports SSL out-of-the-box, but it’s a little bit of work to get PgBouncer secured. This tutorial will show you how.
+Both Amazon RDS and PgBouncer have built-in support for TLS, but it’s a little bit of work to get it set up. This tutorial will show you how.
 
 ## Direct Connections
 
-The first step is to make sure all direct connections are secure. Luckily, Amazon RDS has a parameter named `rds.force_ssl` for this. Once it’s applied, you’ll see an error if you try to connect without SSL. You can test this out with:
+The first step is to make sure all direct connections are secure. Luckily, Amazon RDS has a parameter named `rds.force_ssl` for this. Once it’s applied, you’ll see an error if you try to connect without TLS. You can test this out with:
 
 ```sh
 psql "postgresql://user:secret@dbhost:5432/ssltest?sslmode=disable
@@ -35,9 +35,9 @@ CREATE EXTENSION IF NOT EXISTS sslinfo;
 SELECT ssl_is_used();
 ```
 
-Now direct connections are good, so let’s secure the connection from PgBouncer to the database.
+Now direct connections are good, so let’s secure connections from PgBouncer to the database.
 
-## PgBouncer to Database
+## PgBouncer to the Database
 
 Follow [this guide](PgBouncer-Setup.md) to set up PgBouncer. Once that’s completed, there are two settings to add to `/etc/pgbouncer/pgbouncer.ini`:
 
@@ -74,9 +74,9 @@ sudo tcpdump -i lo -X -s 0 'port 6432'
 
 Run commands in `psql` and you’ll see plaintext statements printed.
 
-## Client to PgBouncer
+## Clients to PgBouncer
 
-The last link is the trickiest. PgBouncer 1.7+ supports TLS connections out-of-the-box, but we need to create keys and certificates for it. For this, we’ll create a private [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) with Vault.
+This last flow is the trickiest. PgBouncer 1.7+ supports TLS, but we need to create keys and certificates for it. For this, we’ll create a private [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) with Vault.
 
 Install the [latest version of Vault](https://www.vaultproject.io/downloads.html) and jq
 
