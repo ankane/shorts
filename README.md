@@ -3,14 +3,15 @@
 Featured
 
 - [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
-- [Adventures and Lessons in Postgres](Scaling-Postgres.md)
-- [Practical Search](https://github.com/ankane/practical-search)
+- [Securing Database Traffic with PgBouncer and RDS](Securing-Database-Traffic.md)
 
 Short, random tutorials
 
 - [A Short Guide to Metrics](Short-Guide-to-Metrics.md)
 - [Trying Out Vault for Postgres Credentials](Trying-Out-Vault.md)
 - [Client-Side Encryption with AWS and Ruby](AWS-Client-Side-Encryption.md)
+- [Adventures and Lessons in Postgres](Scaling-Postgres.md)
+- [Practical Search](https://github.com/ankane/practical-search)
 - [Autocomplete](https://github.com/ankane/practical-search/blob/master/Autocomplete.md)
 - [Bootstrapping Postgres Users](https://tech.instacart.com/bootstrapping-postgres-users-cd594e5f28e9)
 - [New Rails App Checklist](New-Rails-App-Checklist.md)
