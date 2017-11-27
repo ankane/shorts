@@ -53,23 +53,6 @@ Create `/etc/pgbouncer/userlist.txt` with:
 
 Use the same credentials as your database server.
 
-## Increase File Limits
-
-If you need more than 1,000 connections to PgBouncer, you’ll need to increase file limits.
-
-Append to `/etc/security/limits.conf`:
-
-```
-postgres         soft    nofile          4096
-postgres         hard    nofile          10240
-```
-
-Append to both `/etc/pam.d/common-session` and `/etc/pam.d/common-session-noninteractive`:
-
-```
-session required pam_limits.so
-```
-
 ## Start the Service
 
 ```sh
@@ -83,6 +66,30 @@ Then reboot the server and confirm the process comes back up.
 ```sh
 psql -h 127.0.0.1 -p 6432 -d YOUR-DBNAME -U USERNAME1
 ```
+
+## Increase File Limits
+
+If you need more than 1,000 connections to PgBouncer, you’ll need to increase file limits.
+
+Append to `/etc/default/pgbouncer`:
+
+```sh
+ulimit -n 16384
+```
+
+Restart the service with:
+
+```sh
+sudo service pgbouncer restart
+```
+
+To confirm it worked, find the process ID and run:
+
+```sh
+cat /proc/<pid>/limits
+```
+
+`Max open files` should reflect the value above.
 
 ## App Changes
 
