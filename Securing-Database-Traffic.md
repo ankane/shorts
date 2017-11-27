@@ -76,7 +76,7 @@ Run commands in `psql` and you’ll see plaintext statements printed.
 
 ## Client to PgBouncer
 
-The last link to secure is the trickiest. PgBouncer 1.7+ supports TLS connections out-of-the-box, but we need to create keys and certificates for it. For this, we’ll create a private [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) with Vault.
+The last link is the trickiest. PgBouncer 1.7+ supports TLS connections out-of-the-box, but we need to create keys and certificates for it. For this, we’ll create a private [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) with Vault.
 
 Install the [latest version of Vault](https://www.vaultproject.io/downloads.html) and jq
 
