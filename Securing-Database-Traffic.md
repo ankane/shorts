@@ -39,7 +39,7 @@ Now direct connections are good, so let’s secure the connection from PgBouncer
 
 ## PgBouncer to Database
 
-Follow [this guide](PgBouncer-Setup.md) to set up PgBouncer if you haven’t already. Once that’s completed, there are two settings to add to `/etc/pgbouncer/pgbouncer.ini`:
+Follow [this guide](PgBouncer-Setup.md) to set up PgBouncer. Once that’s completed, there are two settings to add to `/etc/pgbouncer/pgbouncer.ini`:
 
 ```ini
 server_tls_sslmode = verify-full
