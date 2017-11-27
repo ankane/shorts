@@ -28,7 +28,7 @@ psql "postgresql://user:secret@dbhost:5432/ssltest?sslmode=verify-full&sslrootce
 
 Once connected, you should see an `SSL connection` line before the first prompt.
 
-There’s also an extention you can use to confirm for non-`psql` connections.
+There’s also an extension you can use (useful for non-`psql` connections).
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS sslinfo;
