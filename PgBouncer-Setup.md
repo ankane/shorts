@@ -31,7 +31,7 @@ Edit `/etc/pgbouncer/pgbouncer.ini`. The important settings are:
 
 ```ini
 [databases]
-YOUR-DBNAME = host=YOUR-DATABASE-URL port=5432 dbname=YOUR-DBNAME
+YOUR-DBNAME = host=YOUR-HOST port=5432 dbname=YOUR-DBNAME
 
 [pgbouncer]
 listen_addr = *
