@@ -3,7 +3,7 @@
 Featured
 
 - [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
-- [Securing Database Traffic with PgBouncer and RDS](Securing-Database-Traffic.md)
+- [Securing Database Traffic with PgBouncer and Amazon RDS](Securing-Database-Traffic.md)
 
 Short, random tutorials
 

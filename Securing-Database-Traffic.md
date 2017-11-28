@@ -1,4 +1,4 @@
-# Securing Database Traffic with PgBouncer and RDS
+# Securing Database Traffic with PgBouncer and Amazon RDS
 
 Securing database traffic inside your network can be a great step for defense in depth. It’s also a necessity for [Zero Trust Networks](https://www.amazon.com/Zero-Trust-Networks-Building-Untrusted/dp/1491962194).
 
