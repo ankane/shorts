@@ -23,9 +23,9 @@ Before we jump into it, there’s something you should know about new databases.
 After creating a new database, all users can access it and create tables in the `public` schema. This isn’t what we want. To fix this, run:
 
 ```sql
-REVOKE ALL ON DATABASE mydb FROM public;
+REVOKE ALL ON DATABASE mydb FROM PUBLIC;
 
-REVOKE ALL ON SCHEMA public FROM public;
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
 ```
 
 Be sure to replace `mydb` with your database name.
