@@ -1,6 +1,6 @@
 # Adding CSP to Rails
 
-Content Security Policy can be an effective way to prevent XSS attacks. If you aren’t familiar, here’s a [great intro](http://www.html5rocks.com/en/tutorials/security/content-security-policy/).
+Content Security Policy can be an effective way to prevent XSS attacks. If you aren’t familiar, here’s a [great intro](https://www.html5rocks.com/en/tutorials/security/content-security-policy/).
 
 To get started with Rails, first add the header to all requests in your `ApplicationController`. We want to start by blocking content in development so we notice it, but only report it in production so nothing breaks.
 

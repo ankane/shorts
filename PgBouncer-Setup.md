@@ -42,7 +42,7 @@ pool_mode = transaction
 server_reset_query =
 ```
 
-[View all settings](http://pgbouncer.projects.pgfoundry.org/doc/config.html)
+[View all settings](https://pgbouncer.github.io/config.html)
 
 Create `/etc/pgbouncer/userlist.txt` with:
 
@@ -97,7 +97,7 @@ Be sure to disable prepared statements, as they will not work with PgBouncer in 
 
 ## Statement Timeouts
 
-To use a [statement timeout](http://www.postgresql.org/docs/9.4/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT), run:
+To use a [statement timeout](https://www.postgresql.org/docs/current/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT), run:
 
 ```sql
 ALTER ROLE USERNAME1 SET statement_timeout = 5000;

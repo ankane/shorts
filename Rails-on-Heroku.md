@@ -110,7 +110,7 @@ Add [Papertrail](https://papertrailapp.com/) to make your logs easily searchable
 heroku addons:create papertrail
 ```
 
-Set it up to [archive logs to S3](http://help.papertrailapp.com/kb/how-it-works/permanent-log-archives/).
+Set it up to [archive logs to S3](https://help.papertrailapp.com/kb/how-it-works/permanent-log-archives/).
 
 ## Performance
 

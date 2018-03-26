@@ -2,7 +2,7 @@
 
 > I do not admire soaring stock prices or massive IPOs or billion-dollar valuations. I admire drastic, unsolicited change. And I admire those who elicit change.
 
-- [The Oatmeal](http://theoatmeal.com/comics/tesla_model_s)
+- [The Oatmeal](https://theoatmeal.com/comics/tesla_model_s)
 
 ***
 
@@ -44,7 +44,7 @@
 
 > Go after your dreams or someone will hire you to achieve theirs.
 
-- Tony Gaskins, [paraphrased](http://www.reddit.com/r/AskReddit/comments/1tqyzd/whats_the_most_inspiring_quote_you_know/)
+- Tony Gaskins, [paraphrased](https://www.reddit.com/r/AskReddit/comments/1tqyzd/whats_the_most_inspiring_quote_you_know/)
 
 ***
 
@@ -98,7 +98,7 @@
 
 > I would do everything I could, and I would do everything I could because this is what love means.  That the odds are irrelevant, and that you do whatever the hell you can - the odds be damned.
 
-- [Lawrence Lessig](http://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim)
+- [Lawrence Lessig](https://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim)
 
 ***
 

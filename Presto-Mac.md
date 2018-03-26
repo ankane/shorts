@@ -4,7 +4,7 @@
 
 ## Server
 
-The easiest way to install Presto is with [Homebrew](http://brew.sh).
+The easiest way to install Presto is with [Homebrew](https://brew.sh).
 
 ```sh
 brew install presto

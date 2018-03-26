@@ -104,7 +104,7 @@ cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
 Store backups on S3
 
 - [Amazon S3 Backup Scripts](https://github.com/collegeplus/s3-shell-backups/blob/master/s3-postgresql-backup.sh)
-- [Automatic Backups to Amazon S3 are Easy ](http://rosskaff.com/blog/2014/02/automatic-backups-to-amazon-s3-are-easy.html)
+- [Automatic Backups to Amazon S3 are Easy ](https://rossta.net/blog/automatic-backups-to-amazon-s3-are-easy.html)
 
 *TODO: better instructions*
 
@@ -183,4 +183,4 @@ logrotate -fv /etc/logrotate.d/postgresql-common
 
 ## Resources
 
-- [Copy your server logs to Amazon S3 using Logrotate and s3cmd](http://www.shanestillwell.com/2013/04/04/copy-your-server-logs-to-amazon-s3-using-logrotate-and-s3cmd/)
+- [Copy your server logs to Amazon S3 using Logrotate and s3cmd](https://www.shanestillwell.com/2013/04/04/copy-your-server-logs-to-amazon-s3-using-logrotate-and-s3cmd/)

@@ -88,7 +88,7 @@ As with most apps, we started with a single database. Next, we moved our product
 
 We created [pgsync](https://github.com/ankane/pgsync) to make this easier.
 
-You can also move tables to another data store. We recently started using [Cassandra](http://cassandra.apache.org/).
+You can also move tables to another data store. We recently started using [Cassandra](https://cassandra.apache.org/).
 
 ### Archiving
 

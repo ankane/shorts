@@ -17,7 +17,7 @@ SELECT * FROM pandas WHERE mood = 'happy'
 /*application:Nature,job:EatBambooJob*/
 ```
 
-Whether you use [PgHero](https://github.com/ankane/pghero), [pg_stat_statements](http://www.postgresql.org/docs/9.4/static/pgstatstatements.html) on its own, or `log_min_duration_statement` to log slow queries, comments can help!
+Whether you use [PgHero](https://github.com/ankane/pghero), [pg_stat_statements](https://www.postgresql.org/docs/current/static/pgstatstatements.html) on its own, or `log_min_duration_statement` to log slow queries, comments can help!
 
 ## Ruby on Rails
 
@@ -47,7 +47,7 @@ coming("soon")
 
 ## R
 
-With [RPostgreSQL](http://cran.r-project.org/web/packages/RPostgreSQL/index.html), create `queryComments.R` and source appropriately.
+With [RPostgreSQL](https://cran.r-project.org/web/packages/RPostgreSQL/index.html), create `queryComments.R` and source appropriately.
 
 ```r
 dbGetQuery <- function(con, statement)

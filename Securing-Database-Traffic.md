@@ -14,7 +14,7 @@ psql "postgresql://user:secret@dbhost:5432/ssltest?sslmode=disable
 
 You’ll see an error like `FATAL:  no pg_hba.conf entry ... SSL off` if everything is configured correctly.
 
-There are a number of possible values for `sslmode`, which you can [read about here](https://www.postgresql.org/docs/current/static/libpq-ssl.html). The most secure (and one we want) is `verify-full`, as it provides protection against both eavesdropping and man-in-the-middle attacks. This mode requires you to provide a root certificate to verify against. AWS makes this certificate available on [their website](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.SSL).
+There are a number of possible values for `sslmode`, which you can [read about here](https://www.postgresql.org/docs/current/static/libpq-ssl.html). The most secure (and one we want) is `verify-full`, as it provides protection against both eavesdropping and man-in-the-middle attacks. This mode requires you to provide a root certificate to verify against. AWS makes this certificate available on [their website](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.SSL).
 
 ```sh
 wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem

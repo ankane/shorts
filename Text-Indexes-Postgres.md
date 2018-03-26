@@ -8,7 +8,7 @@ At first glance, a hash index seem perfect for this. However, you shouldn’t us
 CREATE INDEX CONCURRENTLY ON table_name (CAST(md5(column_name) AS uuid));
 ```
 
-Cast to a `uuid` since it’s 16 bytes - the [perfect size](http://dba.stackexchange.com/questions/115271/what-is-the-optimal-data-type-for-an-md5-field) to store an md5 hash.
+Cast to a `uuid` since it’s 16 bytes - the [perfect size](https://dba.stackexchange.com/questions/115271/what-is-the-optimal-data-type-for-an-md5-field) to store an md5 hash.
 
 
 Add an extra condition to your queries so the index is used.
