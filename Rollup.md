@@ -35,6 +35,8 @@ import uglify from "rollup-plugin-uglify";
 
 const input = "src/index.js";
 const outputName = "MyProject";
+const external = Object.keys(pkg.peerDependencies || {});
+const esExternal = external.concat(Object.keys(pkg.dependencies || {}));
 const banner =
 `/*
  * ${pkg.name}
@@ -54,6 +56,7 @@ export default [
       format: "umd",
       banner: banner
     },
+    external: external,
     plugins: [
       resolve(),
       commonjs(),
@@ -67,6 +70,7 @@ export default [
       file: pkg.main.replace(/\.js$/, ".min.js"),
       format: "umd"
     },
+    external: external,
     plugins: [
       resolve(),
       commonjs(),
@@ -81,7 +85,7 @@ export default [
       format: "es",
       banner: banner
     },
-    external: [],
+    external: esExternal,
     plugins: [
       buble()
     ]
