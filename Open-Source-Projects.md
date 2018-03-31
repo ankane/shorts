@@ -79,15 +79,16 @@ Search
 
 Security
 
+- [AuthTrail](https://github.com/ankane/authtrail) - Track Devise login activity
 - [Blind Index](https://github.com/ankane/blind_index) - Securely search encrypted database fields
 - [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
+- [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
 
 Other
 
 - [ActiveJob Backport](https://github.com/ankane/activejob_backport) - Active Job backported to Rails 4.0 and 4.1
 - [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
-- [AuthTrail](https://github.com/ankane/authtrail) - Track Devise login activity
 - [Benchmeth](https://github.com/ankane/benchmeth) - The super easy way to benchmark methods in a live application
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
 - [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
@@ -106,7 +107,6 @@ Other
 - [Pretender](https://github.com/ankane/pretender) - Simple, powerful user impersonation for Rails
 - [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 - [Safely](https://github.com/ankane/safely) - Rescue and report exceptions in non-critical code
-- [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
 - [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
 - [TimeRange](https://github.com/ankane/timerange) - Time ranges for Ruby
 
