@@ -6,6 +6,7 @@
 
 - [Ahoy.js](https://github.com/ankane/ahoy.js) - Simple, powerful JavaScript analytics
 - [Chartkick.js](https://github.com/ankane/chartkick.js) - Create beautiful Javascript charts with minimal code
+- [Mapkick.js](https://github.com/ankane/mapkick.js) - Create beautiful, interactive maps with one line of JavaScript
 - [React Chartkick](https://github.com/ankane/react-chartkick) - Create beautiful charts with one line in React
 - [Swipeout](https://github.com/ankane/swipeout) - Swipe-to-delete goodness for the mobile web
 - [Vue Chartkick](https://github.com/ankane/vue-chartkick) - Create beautiful charts with one line in Vue.js
