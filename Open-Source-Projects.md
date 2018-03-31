@@ -41,7 +41,6 @@ ActiveRecord
 - [Distribute Reads](https://github.com/ankane/distribute_reads) - Scale database reads to replicas in Rails
 - [Groupdate](https://github.com/ankane/groupdate) - The simplest way to group temporal data
 - [Hightop](https://github.com/ankane/hightop) - A nice shortcut for group count queries
-- [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
 - [str_enum](https://github.com/ankane/str_enum) - String enums for Rails
 
@@ -77,6 +76,12 @@ Search
 - [EsHero](https://github.com/ankane/eshero) - Elasticsearch insights made easy
 - [Searchjoy](https://github.com/ankane/searchjoy) - Search analytics made easy
 - [Searchkick](https://github.com/ankane/searchkick) - Intelligent search made easy for Rails
+
+Security
+
+- [Blind Index](https://github.com/ankane/blind_index) - Securely search encrypted database fields
+- [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
+- [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
 
 Other
 
