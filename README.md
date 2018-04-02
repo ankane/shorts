@@ -65,6 +65,7 @@ Talks
 
 Latest projects
 
+- [Hypershield](https://github.com/ankane/hypershield) - Shield sensitive data in Postgres and MySQL
 - [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
 - [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
 
