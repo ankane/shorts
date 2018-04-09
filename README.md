@@ -65,6 +65,7 @@ Talks
 
 Latest projects
 
+- [Secure Spreadsheet](https://github.com/ankane/secure-spreadsheet) - Encrypt and password protect sensitive CSV and XLSX files
 - [Hypershield](https://github.com/ankane/hypershield) - Shield sensitive data in Postgres and MySQL
 - [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
 - [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
