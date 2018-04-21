@@ -5,19 +5,15 @@
 To prevent `Can't verify CSRF token authenticity` with Rails, use the method below:
 
 ```javascript
-function csrfProtect(payload) {
-  var param = $("meta[name=csrf-param]").attr("content");
-  var token = $("meta[name=csrf-token]").attr("content");
-  if (param && token) payload[param] = token;
-  return new Blob([JSON.stringify(payload)], {type : "application/json; charset=utf-8"});
-}
-```
+var data = new FormData();
+data.append("hello", "beacon");
 
-And do:
+// add CSRF
+var param = document.querySelector("meta[name=csrf-param]").getAttribute("content");
+var token = document.querySelector("meta[name=csrf-token]").getAttribute("content");
+data.append(param, token);
 
-```javascript
-var payload = {hello: "beacon"};
-navigator.sendBeacon("/some/path", csrfProtect(payload));
+navigator.sendBeacon("/beacon", data);
 ```
 
 For a real-world use case, check out [Ahoy.js](https://github.com/ankane/ahoy.js).
