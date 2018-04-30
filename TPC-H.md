@@ -63,5 +63,7 @@ gem specific_install https://github.com/ankane/dexter.git
 And run
 
 ```sh
-dexter tpch queries.sql --input-format sql --create
+for i in `seq 1 5`; do
+  dexter tpch queries.sql --input-format sql --create
+done
 ```
