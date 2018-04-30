@@ -53,11 +53,10 @@ psql tpch < queries.sql
 
 ## Bonus: Add Indexes with Dexter
 
-Install the latest version of [Dexter](https://github.com/ankane/dexter)
+Install [Dexter](https://github.com/ankane/dexter)
 
 ```sh
-gem install specific_install
-gem specific_install https://github.com/ankane/dexter.git
+gem install pgdexter
 ```
 
 And run
