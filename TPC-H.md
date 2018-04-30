@@ -41,14 +41,14 @@ for i in `ls queries/*.sql`; do
   sed 's/;//' $i > /tmp/$i
 done
 
-DSS_QUERY=/tmp/queries ./qgen | sed 's/limit -1//' > queries.sql
+DSS_QUERY=/tmp/queries ./qgen | sed 's/limit -1//' | sed 's/day (3)/day/' > queries.sql
 ```
 
 Run queries
 
 ```sh
 psql tpch -c "ANALYZE VERBOSE"
-psql tpch -f queries.sql
+psql tpch < queries.sql
 ```
 
 ## Bonus: Add Indexes with Dexter
