@@ -59,5 +59,5 @@ gem specific_install https://github.com/ankane/dexter.git
 And run
 
 ```sh
-dexter tpcds query_0.sql --input-format sql
+dexter tpcds query_0.sql --input-format sql --create
 ```
