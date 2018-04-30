@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [TPC-H with Postgres](TPC-H.md)
 - [A Short Guide to Metrics](Short-Guide-to-Metrics.md)
 - [Trying Out Vault for Postgres Credentials](Trying-Out-Vault.md)
 - [Client-Side Encryption with AWS and Ruby](AWS-Client-Side-Encryption.md)
