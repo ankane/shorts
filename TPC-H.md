@@ -29,7 +29,7 @@ for i in `ls *.tbl`; do
   echo "Loading $table..."
   sed 's/|$//' $i > /tmp/$i
   psql tpch -q -c "TRUNCATE $table"
-  psql tpch -c "\\copy $table FROM '/tmp/$i' CSV DELIMITER '|';"
+  psql tpch -c "\\copy $table FROM '/tmp/$i' CSV DELIMITER '|'"
 done
 ```
 
