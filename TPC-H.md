@@ -1,5 +1,7 @@
 # TPC-H with Postgres
 
+[TPC-H](http://www.tpc.org/tpch/) is a database benchmark.
+
 ```sh
 git clone https://github.com/gregrahn/tpch-kit.git
 cd tpch-kit/dbgen
@@ -47,4 +49,19 @@ Run queries
 ```sh
 psql tpch -c "ANALYZE VERBOSE"
 psql tpch -f queries.sql
+```
+
+## Bonus: Add Indexes with Dexter
+
+Install the latest version of [Dexter](https://github.com/ankane/dexter)
+
+```sh
+gem install specific_install
+gem specific_install https://github.com/ankane/dexter.git
+```
+
+And run
+
+```sh
+dexter tpch queries.sql --input-format sql
 ```
