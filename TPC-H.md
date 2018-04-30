@@ -38,7 +38,7 @@ Generate queries
 ```sh
 mkdir /tmp/queries
 for i in `ls queries/*.sql`; do
-  sed 's/;//' $i > /tmp/$i
+  tail -r $i | sed '2s/;//' | tail -r > /tmp/$i
 done
 
 DSS_QUERY=/tmp/queries ./qgen | sed 's/limit -1//' | sed 's/day (3)/day/' > queries.sql
