@@ -37,7 +37,6 @@ class CreateCspReports < ActiveRecord::Migration
       t.text :original_policy
       t.text :blocked_uri
       t.integer :status_code
-      t.text :ip
       t.text :user_agent
       t.boolean :report_only
       t.timestamp :created_at
@@ -63,12 +62,17 @@ class CspReportsController < ApplicationController
       blocked_uri: report["blocked-uri"],
       status_code: report["status-code"],
       user_agent: request.user_agent,
-      ip: request.remote_ip,
       report_only: params[:report_only] == "true"
     )
-    render nothing: true
+    head :ok
   end
 end
+```
+
+Don’t forget the route.
+
+```ruby
+resources :csp_reports, only: [:create]
 ```
 
 ## Enforcing the Policy
