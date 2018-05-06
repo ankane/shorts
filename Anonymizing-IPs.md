@@ -1,6 +1,8 @@
 # Anonymizing IPs in Ruby
 
-With the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) just around the corner, here are two useful ways to protect your users’ IP addresses. Both support IPv4 and IPv6.
+With the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) just around the corner, here are two useful ways to protect your users’ IP addresses.
+
+Both support IPv4 and IPv6, and are included in the [ip_anonymizer](https://github.com/ankane/ip_anonymizer) gem.
 
 ## Masking
 

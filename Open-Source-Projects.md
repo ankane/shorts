@@ -83,6 +83,7 @@ Security
 - [AuthTrail](https://github.com/ankane/authtrail) - Track Devise login activity
 - [Blind Index](https://github.com/ankane/blind_index) - Securely search encrypted database fields
 - [Hypershield](https://github.com/ankane/hypershield) - Shield sensitive data in Postgres and MySQL
+- [IP Anonymizer](https://github.com/ankane/ip_anonymizer) - IP address anonymizer for Ruby
 - [KMS Encrypted](https://github.com/ankane/kms_encrypted) - KMS + attr_encrypted
 - [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
 - [Scrub Params](https://github.com/ankane/scrub_params) - Safer Rails parameters by default
