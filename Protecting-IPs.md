@@ -36,7 +36,7 @@ mask_ip("2001:4860:4860:0:0:0:0:8844")
 
 ## Hashing
 
-This transforms the IP address with a keyed hash function (PBKDF2-HMAC-SHA256). If an unkeyed function is used, it’s trivial to build a rainbow table.
+This transforms IP addresses with a keyed hash function (PBKDF2-HMAC-SHA256). If an unkeyed function is used (like SHA1), it’s trivial to build a rainbow table.
 
 ```ruby
 require "ipaddr"
