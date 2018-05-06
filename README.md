@@ -8,7 +8,7 @@ Featured
 
 Short, random tutorials
 
-- [Protecting IPs in Ruby](Protecting-IPs.md)
+- [Anonymizing IPs in Ruby](Anonymizing-IPs.md)
 - [TPC-H with Postgres](TPC-H.md)
 - [TPC-DS with Postgres](TPC-DS.md)
 - [A Short Guide to Metrics](Short-Guide-to-Metrics.md)
