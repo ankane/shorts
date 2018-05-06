@@ -1,4 +1,4 @@
-# Protecting IP Addresses in Ruby
+# Protecting IPs in Ruby
 
 With the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) just around the corner, here are two useful ways to protect your users’ IP addresses. Both support IPv4 and IPv6.
 
