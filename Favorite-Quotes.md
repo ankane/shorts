@@ -54,10 +54,9 @@
 
 ***
 
+> A different version of you exists in the minds of everyone who knows you.
 
-> You don’t supposed to get paid for everything you do. Let some of it be a blessing. If you can’t give a blessing, you’re a mighty poor man.
-
-- The Great Invisible, 7 min before end
+- [r/Showerthoughts](https://www.reddit.com/r/Showerthoughts/comments/8gvfxe/a_different_version_of_you_exists_in_the_minds_of/)
 
 ***
 
@@ -100,6 +99,12 @@
 > I would do everything I could, and I would do everything I could because this is what love means.  That the odds are irrelevant, and that you do whatever the hell you can - the odds be damned.
 
 - [Lawrence Lessig](https://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim)
+
+***
+
+> You don’t supposed to get paid for everything you do. Let some of it be a blessing. If you can’t give a blessing, you’re a mighty poor man.
+
+- The Great Invisible, 7 min before end
 
 ***
 
