@@ -13,7 +13,7 @@
 ## Engineering-Specific Posts
 
 - [This Is What Impactful Engineering Leadership Looks Like](http://firstround.com/review/this-is-what-impactful-engineering-leadership-looks-like/)
-- [Engineering Management](http://algeri-wong.com/yishan/engineering-management-process.html)
+- [Engineering Management](http://algeri-wong.com/yishan/engineering-management.html)
 - [44 Engineering Management Lessons](https://www.defmacro.org/2014/10/03/engman.html)
 
 ## Advice
