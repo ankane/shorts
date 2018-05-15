@@ -1,4 +1,4 @@
-# Securing Email Addresses in Rails
+# Securing User Emails in Rails
 
 The GDPR goes into effect next Friday. Whether or not you serve European residents, it’s a great reminder that we have the responsibility to build systems in a way that protects user privacy.
 
