@@ -9,6 +9,7 @@ Featured
 Short, random tutorials
 
 - [Anonymizing IPs in Ruby](Anonymizing-IPs.md)
+- [Package Your JavaScript Libraries With Rollup](Rollup.md)
 - [TPC-H with Postgres](TPC-H.md)
 - [TPC-DS with Postgres](TPC-DS.md)
 - [A Short Guide to Metrics](Short-Guide-to-Metrics.md)
