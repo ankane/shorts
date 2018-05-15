@@ -114,6 +114,9 @@ Then update the model to the desired state:
 class User < ApplicationRecord
   attr_encrypted :email, key: ENV["EMAIL_ENCRYPTION_KEY"]
   blind_index :email, key: ENV["EMAIL_BLIND_INDEX_KEY"]
+
+  # remove this line after dropping email column
+  self.ignored_columns = ["email"]
 end
 ```
 
@@ -136,7 +139,7 @@ gem 'logstop'
 And create `config/initializers/logstop.rb` with:
 
 ```ruby
-Rails.logger.formatter = Logstop::Formatter.new(Rails.logger.formatter)
+Logstop.guard(Rails.logger)
 ```
 
 ## Summary
