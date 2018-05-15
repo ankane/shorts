@@ -2,7 +2,7 @@
 
 Featured
 
-- [Protecting Email Addresses in Rails](Protecting-Emails-Rails.md)
+- [Securing Email Addresses in Rails](Securing-Emails-Rails.md)
 - [Introducing Dexter, the Automatic Indexer for Postgres](https://medium.com/@ankane/introducing-dexter-the-automatic-indexer-for-postgres-5f8fa8b28f27)
 - [Securing Database Traffic with PgBouncer and Amazon RDS](https://medium.com/@ankane/securing-database-traffic-with-pgbouncer-and-amazon-rds-c775b10bad75)
 
