@@ -95,6 +95,7 @@ class User < ApplicationRecord
 
   def protect_email
     self.protected_email = email
+    compute_protected_email_bidx
   end
 end
 ```
