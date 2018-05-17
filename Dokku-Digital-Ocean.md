@@ -9,8 +9,8 @@ Create new droplet with Ubuntu 16.04. Be sure to use an SSH key.
 ## Install Dokku
 
 ```sh
-wget https://raw.githubusercontent.com/dokku/dokku/v0.9.4/bootstrap.sh
-sudo DOKKU_TAG=v0.9.4 bash bootstrap.sh
+wget https://raw.githubusercontent.com/dokku/dokku/v0.12.5/bootstrap.sh
+sudo DOKKU_TAG=v0.12.5 bash bootstrap.sh
 ```
 
 And visit your server’s IP address in your browser to complete installation.
