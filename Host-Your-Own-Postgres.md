@@ -30,18 +30,18 @@ and select `None of the above`, then `UTC`.
 
 ## Install Postgres
 
-Install PostgreSQL 9.6
+Install PostgreSQL 10
 
 ```sh
 echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install -qq -y postgresql-9.6 postgresql-contrib
+sudo apt-get install -qq -y postgresql-10 postgresql-contrib
 ```
 
 ## Configure
 
-Edit `/etc/postgresql/9.6/main/postgresql.conf`.
+Edit `/etc/postgresql/10/main/postgresql.conf`.
 
 ```sh
 # general
