@@ -23,7 +23,6 @@ Don’t fret too much over the name - you can easily update it later
 Add Git
 
 ```sh
-git init
 git add .
 git commit -m "Hello app"
 ```
