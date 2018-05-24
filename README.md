@@ -31,7 +31,6 @@ Short, random tutorials
 - [Startup Security](Startup-Security.md)
 - [Learn Data Science](Learn-Data-Science.md)
 - [PgBouncer Setup](PgBouncer-Setup.md)
-- [Development Rails](Development-Rails.md)
 - [Adding CSP to Rails](CSP-Rails.md)
 - [Security Checks](Security-Checks.md)
 - [Data Science SQL](Data-Science-SQL.md)
@@ -55,8 +54,7 @@ Short, random posts
 
 Guides
 
-- [Production Rails](https://github.com/ankane/production_rails)
-- [Secure Rails](https://github.com/ankane/secure_rails)
+- [Rails Best Practices](https://github.com/ankane/rails-best-practices)
 - [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 - [Practical Search](https://github.com/ankane/practical-search)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
