@@ -60,6 +60,7 @@ External Services
 
 - [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
 - [Moves](https://github.com/ankane/moves) - Ruby client for Moves
+- [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
 
 Migrations
 
