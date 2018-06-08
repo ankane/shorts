@@ -1,5 +1,9 @@
 # R and Database URLs
 
+**Note:** This approach is now built into the [dbx package](https://github.com/ankane/dbx)
+
+---
+
 To use a `DATABASE_URL` with R, do:
 
 ## Postgres

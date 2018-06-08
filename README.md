@@ -67,6 +67,7 @@ Talks
 
 Latest projects
 
+- [dbx](https://github.com/ankane/dbx) - Easy database operations for R
 - [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
 - [IP Anonymizer](https://github.com/ankane/ip_anonymizer) - IP address anonymizer for Ruby
 - [Secure Spreadsheet](https://github.com/ankane/secure-spreadsheet) - Encrypt and password protect sensitive CSV and XLSX files
