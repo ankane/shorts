@@ -30,8 +30,8 @@
 
 ## R
 
-- [dbx](https://github.com/ankane/dbx) - Easy database operations for R
-- [Jetpack](https://github.com/ankane/jetpack) - Simple package manager for R
+- [dbx](https://github.com/ankane/dbx) - A fast, easy-to-use database library for R
+- [Jetpack](https://github.com/ankane/jetpack) - A friendly package manager for R
 - [Rollbar](https://github.com/ankane/rollbar) - Error tracking for R
 
 ## Ruby

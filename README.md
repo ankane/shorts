@@ -67,13 +67,9 @@ Talks
 
 Latest projects
 
-- [dbx](https://github.com/ankane/dbx) - Easy database operations for R
+- [Jetpack](https://github.com/ankane/jetpack) - A friendly package manager for R
+- [dbx](https://github.com/ankane/dbx) - A fast, easy-to-use database library for R
 - [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
-- [IP Anonymizer](https://github.com/ankane/ip_anonymizer) - IP address anonymizer for Ruby
-- [Secure Spreadsheet](https://github.com/ankane/secure-spreadsheet) - Encrypt and password protect sensitive CSV and XLSX files
-- [Hypershield](https://github.com/ankane/hypershield) - Shield sensitive data in Postgres and MySQL
-- [Logstop](https://github.com/ankane/logstop) - Keep personally identifiable information (PII) out of your logs
-- [Multiverse](https://github.com/ankane/multiverse) - Multiple databases for Rails
 
 Full list of [open source projects](Open-Source-Projects.md)
 
