@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Jupyter + Rails](Jupyter-Rails.md)
 - [Bulk Upsert in Ruby/Rails](Bulk-Upsert-Ruby-Rails.md)
 - [Anonymizing IPs in Ruby](Anonymizing-IPs.md)
 - [Package Your JavaScript Libraries With Rollup](Rollup.md)
