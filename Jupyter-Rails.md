@@ -39,6 +39,8 @@ Create a notebook and add to the top
 require "./config/environment"
 ```
 
+> If not at Rails root, use `Dir.chdir("path/to/root") { require "./config/environment" }`
+
 And science away
 
 ```ruby
