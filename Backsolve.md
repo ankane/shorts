@@ -31,19 +31,17 @@ Finally, backsolve. Code ported from [Stack Overflow](https://codereview.stackex
 def backsolve(a, b)
   x = Matrix.zero(b.row_count, b.column_count)
 
-  # use arrays since matrices
+  # use an array since matrices
   # are immutable in Ruby
   x = x.to_a
-  a = a.to_a
-  b = b.to_a
 
-  c = 1.0 / a[-1][-1]
-  x[-1] = b[-1].map { |v| c * v }
+  c = 1.0 / a[-1, -1]
+  x[-1] = b.row(-1).map { |v| c * v }
 
-  (b.size - 2).downto(0) do |i|
-    c = 1.0 / a[i][i]
-    s = (Matrix.rows([a[i][(i + 1)..-1]]) * Matrix.rows(x[(i + 1)..-1])).to_a[0]
-    x[i] = b[i].zip(s).map { |v, w| v - w }.map { |v| c * v }
+  (b.row_count - 2).downto(0) do |i|
+    c = 1.0 / a[i, i]
+    s = (a.minor(i..i, (i+1)..-1) * Matrix.rows(x[(i + 1)..-1])).to_a[0]
+    x[i] = b.row(i).zip(s).map { |v, w| v - w }.map { |v| c * v }
   end
 
   Matrix.rows(x)
