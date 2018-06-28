@@ -37,13 +37,13 @@ def backsolve(a, b)
   a = a.to_a
   b = b.to_a
 
-  t = 1.0 / a[-1][-1]
-  x[-1] = b[-1].map { |v| v * t }
+  c = 1.0 / a[-1][-1]
+  x[-1] = b[-1].map { |v| c * v }
 
   (b.size - 2).downto(0) do |i|
-    ai = 1.0 / a[i][i]
+    c = 1.0 / a[i][i]
     s = (Matrix.rows([a[i][(i + 1)..-1]]) * Matrix.rows(x[(i + 1)..-1])).to_a[0]
-    x[i] = b[i].zip(s).map { |v, w| v - w }.map { |v| v * ai }
+    x[i] = b[i].zip(s).map { |v, w| v - w }.map { |v| c * v }
   end
 
   Matrix.rows(x)
