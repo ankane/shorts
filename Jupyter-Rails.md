@@ -6,7 +6,7 @@ Install [Jupyter Notebook](https://jupyter.org)
 pip install jupyter
 ```
 
-Install ZeroMQ
+Install [ZeroMQ](http://zeromq.org). With Homebrew, use:
 
 ```sh
 brew install zeromq
