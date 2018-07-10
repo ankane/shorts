@@ -52,6 +52,13 @@ Analytics
 - [Ahoy Email](https://github.com/ankane/ahoy_email) - Simple, powerful email tracking for Rails
 - [Field Test](https://github.com/ankane/field_test) - A/B testing for Rails
 
+Data Science
+
+- [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
+- [Eps](https://github.com/ankane/eps) - Linear regression for Ruby
+- [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
+- [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
+
 Data Visualization
 
 - [Blazer](https://github.com/ankane/blazer) - Open source business intelligence
@@ -61,7 +68,6 @@ External Services
 
 - [Katana](https://github.com/ankane/katana) - Manage multiple environments on Heroku with ease
 - [Moves](https://github.com/ankane/moves) - Ruby client for Moves
-- [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
 
 Migrations
 
@@ -93,7 +99,6 @@ Security
 Other
 
 - [ActiveJob Backport](https://github.com/ankane/activejob_backport) - Active Job backported to Rails 4.0 and 4.1
-- [Anomaly](https://github.com/ankane/anomaly) - Easy-to-use anomaly detection
 - [Benchmeth](https://github.com/ankane/benchmeth) - The super easy way to benchmark methods in a live application
 - [Bundle Benchmark](https://github.com/ankane/bundle_benchmark) - Because loading gems can take longer than you think
 - [Cacheflow](https://github.com/ankane/cacheflow) - Colorized logging for Memcached and Redis
@@ -102,7 +107,6 @@ Other
 - [Drill Sergeant](https://github.com/ankane/drill-sergeant) - Ruby client for Apache Drill
 - [Errbase](https://github.com/ankane/errbase) - Common exception reporting for a variety of services
 - [Frontrunner](https://github.com/ankane/frontrunner) - Webpack for Rails
-- [Guess](https://github.com/ankane/guess) - Statistical gender detection for Ruby
 - [Mailkick](https://github.com/ankane/mailkick) - Email subscriptions made easy
 - [Mainstreet](https://github.com/ankane/mainstreet) - A standard US address model for Rails
 - [Notable](https://github.com/ankane/notable) - Extraordinary insight into your users and background jobs

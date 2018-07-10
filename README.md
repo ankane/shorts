@@ -70,9 +70,9 @@ Talks
 
 Latest projects
 
+- [Eps](https://github.com/ankane/eps) - Linear regression for Ruby
 - [Jetpack](https://github.com/ankane/jetpack) - A friendly package manager for R
 - [dbx](https://github.com/ankane/dbx) - A fast, easy-to-use database library for R
-- [Trend](https://github.com/ankane/trend) - Anomaly detection and forecasting for Ruby
 
 Full list of [open source projects](Open-Source-Projects.md)
 
