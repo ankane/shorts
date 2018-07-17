@@ -8,8 +8,28 @@ Replace the `puts` calls with actual code :)
 
 Like a user changing his or her email or password. For email changes, notify both the old and new email addresses to prevent quiet account takeovers (changing the email then resetting the password).
 
+For Rails 5.2+, use:
+
 ```ruby
-class User < ActiveRecord::Base
+class User < ApplicationRecord
+  after_update :notify_email_change, if: -> { saved_change_to_email? }
+  after_update :notify_password_change, if: -> { saved_change_to_encrypted_password? }
+
+  def notify_email_change
+    puts "Sending email change to #{email_before_last_save}"
+    puts "Sending email change to #{email}"
+  end
+
+  def notify_password_change
+    puts "Sending password change to #{email}"
+  end
+end
+```
+
+For Rails 5.1 and below, use:
+
+```ruby
+class User < ApplicationRecord
   after_update :notify_email_change, if: -> { email_changed? }
   after_update :notify_password_change, if: -> { encrypted_password_changed? }
 
