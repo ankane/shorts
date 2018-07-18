@@ -8,7 +8,7 @@ Replace the `puts` calls with actual code :)
 
 Like a user changing his or her email or password. For email changes, notify the old email addresses to prevent quiet account takeovers (changing the email then resetting the password).
 
-In `config/initializers/devise.rb`, add:
+In `config/initializers/devise.rb`, set:
 
 ```ruby
 config.send_email_changed_notification = true
