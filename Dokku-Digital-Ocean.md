@@ -101,7 +101,7 @@ dokku ps:scale worker=1
 ## One-Off Jobs
 
 ```sh
-dokku run rake db:migrate
+dokku run rails db:migrate
 dokku run rails console
 ```
 

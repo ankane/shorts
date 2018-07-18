@@ -11,5 +11,5 @@ dokku run rails console
 ## Migrations
 
 ```sh
-dokku run rake db:migrate
+dokku run rails db:migrate
 ```

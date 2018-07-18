@@ -106,7 +106,7 @@ echo ".env" >> .gitignore
 Run
 
 ```sh
-rake db:create
+rails db:create
 rails s
 ```
 
