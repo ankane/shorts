@@ -20,7 +20,7 @@ Your site is vulnerable if `evilsite.com` appears in the results.
 
 ### SPF
 
-Check if your SPF record is valid. [Enter your domain here](http://www.kitterman.com/spf/validate.html).
+Check if your SPF record is valid. [Enter your domain here](https://www.kitterman.com/spf/validate.html).
 
 ### DNSSEC
 
