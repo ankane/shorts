@@ -78,7 +78,7 @@ Run commands in `psql` and you’ll see plaintext statements printed.
 
 This last flow is the trickiest. PgBouncer 1.7+ supports TLS, but we need to create keys and certificates for it. For this, we’ll create a private [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure). [Minica](https://github.com/jsha/minica) and [Vault](https://www.vaultproject.io/) are two ways to do this.
 
-We’ll use Minica. Install the latest version:
+We’ll use Minica (here are [instructions for Vault](Vault-PKI.md)). Install the latest version:
 
 ```sh
 sudo apt-get install minica
@@ -107,7 +107,3 @@ psql "postgresql://user:secret@bouncerhost:6432/ssltest?sslmode=verify-full&sslr
 Confirm the `SSL connection` line is printed and `sslmode=disable` no longer works.
 
 We’ve now successfully encrypted traffic end-to-end!
-
----
-
-[Here’s how to do it with Vault](Vault-PKI.md)
