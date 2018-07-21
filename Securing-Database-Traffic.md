@@ -87,7 +87,7 @@ sudo apt-get install minica
 And run:
 
 ```sh
-minica --domains bouncerhost
+minica --domains bouncerhost --ca-cert ca.pem
 ```
 
 We now have the files we need to connect. Add the key and certificate to `/etc/pgbouncer/pgbouncer.ini`:
