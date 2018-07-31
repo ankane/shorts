@@ -87,7 +87,7 @@ sudo apt-get install minica
 And run:
 
 ```sh
-minica --domains bouncerhost --ca-cert ca.pem
+minica --domains bouncerhost
 ```
 
 We now have the files we need to connect. Add the key and certificate to `/etc/pgbouncer/pgbouncer.ini`:
@@ -101,7 +101,7 @@ client_tls_cert_file = /path/to/bouncerhost/cert.pem
 And restart the service. To connect, we once again use `verify-full` but this time with the root certificate we generated above:
 
 ```psql
-psql "postgresql://user:secret@bouncerhost:6432/ssltest?sslmode=verify-full&sslrootcert=ca.pem"
+psql "postgresql://user:secret@bouncerhost:6432/ssltest?sslmode=verify-full&sslrootcert=minica.pem"
 ```
 
 Confirm the `SSL connection` line is printed and `sslmode=disable` no longer works.
