@@ -11,7 +11,7 @@ At [Instacart](https://www.instacart.com), we’ve stored:
 - errors our customers see
 - slow requests
 - location updates from shoppers
-- and audits for models
+- audits for models
 
 Even today, we store most of these in PostgreSQL. Your time is better spent adding value to customers than trying to anticipate how to handle this data at scale. You can figure it out when you get there.
 
