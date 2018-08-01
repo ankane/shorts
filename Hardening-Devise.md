@@ -33,23 +33,9 @@ end
 
 #### Record and monitor login attempts
 
-Create `config/initializers/warden.rb` with:
+Check out [AuthTrail](https://github.com/ankane/authtrail)
 
-```ruby
-Warden::Manager.after_set_user except: :fetch do |user, auth, opts|
-  unless auth.winning_strategy.is_a?(Devise::Strategies::Rememberable)
-    req = ActionDispatch::Request.new(auth.env)
-    puts "Login success: #{user.email} from #{req.remote_ip}"
-  end
-end
-
-Warden::Manager.before_failure do |env, opts|
-  if opts[:message]
-    req = ActionDispatch::Request.new(env)
-    puts "Login failure: #{req.params[:user][:email]} from #{req.remote_ip} for #{opts[:message]}"
-  end
-end
-```
+---
 
 Remember, [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_%28computing%29)!
 
