@@ -50,17 +50,16 @@ from sqlalchemy import event
 
 @event.listens_for(Engine, "before_cursor_execute", retval=True)
 def annotate_queries(conn, cursor, statement, parameters, context, executemany):
+    comment = ""
     try:
-        comment = " /* application:{},endpoint:{} */".format(current_app.name,
+        comment = " /*application:{},endpoint:{}*/".format(current_app.name,
                                                              request.endpoint)
-        statement = statement + comment
     except RuntimeError:  # running in the CLI
         try:
-            comment = " /* application:{} */".format(current_app.name)
-            statement = statement + comment
+            comment = " /*application:{}*/".format(current_app.name)
         except RuntimeError:  # running in a REPL
             pass
-    return statement, parameters
+    return statement + comment, parameters
 ```
 
 ## R
