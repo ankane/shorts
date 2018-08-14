@@ -41,8 +41,26 @@ Marginalia::Comment.components << :job
 
 ## Python
 
+With SQLAlchemy and Flask:
+
 ```python
-coming("soon")
+from flask import current_app, request
+from sqlalchemy.engine import Engine
+from sqlalchemy import event
+
+@event.listens_for(Engine, "before_cursor_execute", retval=True)
+def annotate_queries(conn, cursor, statement, parameters, context, executemany):
+    try:
+        comment = " /* application:{},endpoint:{} */".format(current_app.name,
+                                                             request.endpoint)
+        statement = statement + comment
+    except RuntimeError:  # running in the CLI
+        try:
+            comment = " /* application:{} */".format(current_app.name)
+            statement = statement + comment
+        except RuntimeError:  # running in a REPL
+            pass
+    return statement, parameters
 ```
 
 ## R
