@@ -1,6 +1,6 @@
 # The Origin of SQL Queries
 
-Do you know what part of your application is generating that time-consuming database query?  There’s a much simpler way than `grep`.
+Do you know what part of your application is generating that time-consuming database query? There’s a much simpler way than `grep`.
 
 **Add comments to your queries!!**
 
@@ -21,7 +21,7 @@ Whether you use [PgHero](https://github.com/ankane/pghero), [pg_stat_statements]
 
 ## Ruby on Rails
 
-[Marginalia](https://github.com/basecamp/marginalia) is great.  We prefer to customize slightly in `config/initializers/marginalia.rb`.
+[Marginalia](https://github.com/basecamp/marginalia) is great. We prefer to customize slightly in `config/initializers/marginalia.rb`.
 
 ```ruby
 module Marginalia
@@ -65,16 +65,10 @@ def annotate_queries(conn, cursor, statement, parameters, context, executemany):
 
 ## R
 
-With [RPostgreSQL](https://cran.r-project.org/web/packages/RPostgreSQL/index.html), create `queryComments.R` and source appropriately.
+With [dbx](https://github.com/ankane/dbx), use:
 
 ```r
-dbGetQuery <- function(con, statement)
-{
-  path <- sub(".*=", "", commandArgs()[4])
-  script <- normalizePath(paste0(dirname(path), "/", path))
-  statement <- paste0(statement, " /*application:Nature,script:", script, "*/")
-  RPostgreSQL::dbGetQuery(con, statement)
-}
+options(dbx_comment=TRUE)
 ```
 
 ## Other Languages and Frameworks
