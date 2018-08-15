@@ -8,4 +8,4 @@ A few simple steps to keep you secure.
 
 3. Use [DMARC](https://dmarc.org/overview/) to verify emails sent from your domain. [dmarcian](https://dmarcian.com/) is one provider.
 
-4. Use a team password manager like [CommonKey](https://commonkey.com/) to share passwords.
+4. Use a team password manager like [1Password](https://1password.com/) to share passwords.
