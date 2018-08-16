@@ -2,7 +2,7 @@
 
 A few simple steps to keep you secure.
 
-1. Require 2-factor authentication for important accounts, like [Gmail](https://www.google.com/landing/2step/) and [Github](https://help.github.com/articles/about-two-factor-authentication/).
+1. Require 2-factor authentication for important accounts, like [Gmail](https://www.google.com/landing/2step/) and [GitHub](https://help.github.com/articles/about-two-factor-authentication/).
 
 2. Require hard drives to be encrypted. [FileVault makes this easy](https://support.apple.com/en-us/HT204837) on Macs.
 
