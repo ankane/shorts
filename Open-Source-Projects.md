@@ -86,7 +86,7 @@ Search
 - [Searchjoy](https://github.com/ankane/searchjoy) - Search analytics made easy
 - [Searchkick](https://github.com/ankane/searchkick) - Intelligent search made easy for Rails
 
-Security
+Security & Privacy
 
 - [AuthTrail](https://github.com/ankane/authtrail) - Track Devise login activity
 - [Blind Index](https://github.com/ankane/blind_index) - Securely search encrypted database fields
