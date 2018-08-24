@@ -116,7 +116,7 @@ Other
 - [Pretender](https://github.com/ankane/pretender) - Simple, powerful user impersonation for Rails
 - [Reversed](https://github.com/ankane/reversed) - Reverse DNS / IP lookup for Ruby
 - [Safely](https://github.com/ankane/safely) - Rescue and report exceptions in non-critical code
-- [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout is great. Slowpoke makes it better.
+- [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout enhancements for Rails
 - [TimeRange](https://github.com/ankane/timerange) - Time ranges for Ruby
 
 ## SQL
