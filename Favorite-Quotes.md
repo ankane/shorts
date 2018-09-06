@@ -72,12 +72,6 @@
 
 ***
 
-> Rules are for the guidance of wise men and the obedience of fools.
-
-- Douglas Bader
-
-***
-
 > Be so good they can’t ignore you.
 
 - Steve Martin
@@ -96,7 +90,7 @@
 
 ***
 
-> I would do everything I could, and I would do everything I could because this is what love means.  That the odds are irrelevant, and that you do whatever the hell you can - the odds be damned.
+> I would do everything I could, and I would do everything I could because this is what love means. That the odds are irrelevant, and that you do whatever the hell you can - the odds be damned.
 
 - [Lawrence Lessig](https://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim)
 
