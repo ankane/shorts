@@ -26,6 +26,7 @@ In the migration, add
 
 ```ruby
 create_table :users do |t|
+  t.string :name
   t.string :email
   t.string :provider
   t.string :uid
@@ -61,6 +62,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     auth = request.env["omniauth.auth"]
     user = User.where(provider: auth["provider"], uid: auth["uid"])
             .first_or_initialize(email: auth["info"]["email"])
+    user.name ||= auth["info"]["name"]
     user.save!
 
     user.remember_me = true
