@@ -91,3 +91,16 @@ Follow the [Google API Setup](https://github.com/zquestz/omniauth-google-oauth2#
 GOOGLE_CLIENT_ID=0000000
 GOOGLE_CLIENT_SECRET=0000000
 ```
+
+## Bonus
+
+To remove the hash from the end of the URL after sign-in, use:
+
+```js
+var href = window.location.href;
+if (href[href.length - 1] === "#") {
+  if (typeof window.history.replaceState == "function") {
+    history.replaceState({}, "", href.slice(0, -1));
+  }
+}
+```
