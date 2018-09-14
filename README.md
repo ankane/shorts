@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Verify Requests from Slack in Rails](Verify-Slack-Requests.md)
 - [Jupyter + Rails](Jupyter-Rails.md)
 - [Backsolving in Ruby](Backsolve.md)
 - [Bulk Upsert in Ruby/Rails](Bulk-Upsert-Ruby-Rails.md)
