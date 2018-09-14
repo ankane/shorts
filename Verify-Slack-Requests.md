@@ -1,6 +1,6 @@
 # Verify Requests from Slack in Rails
 
-Slack [signs its requests](https://api.slack.com/docs/verifying-requests-from-slack) so you can verify they came from them.
+Slack [signs its requests](https://api.slack.com/docs/verifying-requests-from-slack) so you can verify they’re authentic.
 
 Here’s a method you can use in your Rails controllers for it.
 
