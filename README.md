@@ -58,7 +58,7 @@ Short, random posts
 
 Guides
 
-- [Rails Best Practices](https://github.com/ankane/rails-best-practices)
+- [Production Rails](https://github.com/ankane/production_rails)
 - [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 - [Practical Search](https://github.com/ankane/practical-search)
 - [Ahoy Guide](https://github.com/ankane/ahoy_guide)
