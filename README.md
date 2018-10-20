@@ -8,6 +8,7 @@ Featured
 
 Short, random tutorials
 
+- [Strong Encryption Keys for Rails](Encryption-Keys-Rails.md)
 - [Verify Requests from Slack in Rails](Verify-Slack-Requests.md)
 - [Jupyter + Rails](Jupyter-Rails.md)
 - [Backsolving in Ruby](Backsolve.md)
