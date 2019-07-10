@@ -39,7 +39,7 @@ This data also has different levels of sensitivity depending on the level of har
 - **High:** Street address, phone number, date of birth, location data
 - **Very High:** Credit card number, Social Security number, passport number, driver’s license number, background check, medical record
 
-If you don’t have strong safeguards for all of this data today, start with the highest sensitivity and work down.
+If you don’t have strong safeguards for all of this data today, start with the highest sensitivity and work down. You can use [pdscan](https://github.com/ankane/pdscan) to scan your data stores for some of this information.
 
 ## Transmitting Data
 
@@ -441,10 +441,10 @@ IOStreams::Pgp::Writer.open("data.txt.gpg", recipient: "hi@example.org") do |out
 end
 ```
 
-Alternatively, you can use a sealed box from [RbNaCl](https://github.com/crypto-rb/rbnacl).
+Alternatively, you can use public key encryption from [RbNaCl](https://github.com/crypto-rb/rbnacl).
 
 ```ruby
-box = RbNaCl::Boxes::Sealed.new(public_key)
+box = RbNaCl::SimpleBox.from_keypair(public_key, private_key)
 box.encrypt("data")
 ```
 

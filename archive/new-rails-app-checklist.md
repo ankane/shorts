@@ -55,6 +55,24 @@ Create a directory for services
 mkdir app/services
 ```
 
+And create `app/services/application_service.rb` with:
+
+```ruby
+class ApplicationService
+  include Rails.application.routes.url_helpers
+
+  def self.perform(*args)
+    new.perform(*args)
+  end
+
+  protected
+
+  def default_url_options
+    Rails.application.config.action_mailer.default_url_options
+  end
+end
+```
+
 ## Templates
 
 Add [Haml](https://github.com/indirect/haml-rails)

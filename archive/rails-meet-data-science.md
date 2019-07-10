@@ -47,9 +47,8 @@ Ruby has a number of libraries for building simple models. Simple models can per
 
 Here are a few libraries for building models in Ruby:
 
-- [Eps](https://github.com/ankane/eps) - Linear Regression
-- [Classifier Reborn](https://github.com/jekyll/classifier-reborn) - Bayesian Classification and LSI
-- [rb-libsvm](https://github.com/febeling/rb-libsvm) - Support Vector Machines
+- [Eps](https://github.com/ankane/eps) - good for beginners
+- [Rumale](https://github.com/yoshoku/rumale) - good for advanced users
 - And [many more](https://github.com/arbox/machine-learning-with-ruby)
 
 Once a model is trained, you’ll need to store it. You can use methods provided by the library, or marshal if none exist. You can store the models as files or in the database.
@@ -75,7 +74,7 @@ Luckily, you can build models in another language and predict in Ruby. This way,
 
 Here are models that can currently predict in Ruby:
 
-- [Eps](https://github.com/ankane/eps) - Linear Regression
+- [Eps](https://github.com/ankane/eps) - Linear Regression, Naive Bayes
 - [Scoruby](https://github.com/asafschers/scoruby) - Random Forest, GBM, Decision Tree, Naive Bayes
 - [XGBoost](https://github.com/PairOnAir/xgboost-ruby) - XGBoost
 
@@ -93,7 +92,7 @@ Function | Python | R
 --- | --- | --- | ---
 Package management | [Pipenv](https://pipenv.readthedocs.io/en/latest/) | [Jetpack](https://github.com/ankane/jetpack)
 Database access | [SQLAlchemy](https://www.sqlalchemy.org/) | [dbx](https://github.com/ankane/dbx)
-PMML export | [scikit2pmml](https://github.com/vaclavcadek/scikit2pmml) | [pmml](https://cran.r-project.org/package=pmml)
+PMML export | [sklearn2pmml](https://github.com/jpmml/sklearn2pmml) | [pmml](https://cran.r-project.org/package=pmml)
 
 One place to be careful is implementing the features in Ruby. It must be consistent with how they were implemented in training. To ensure this is correct, verify it programmatically. Create a CSV file with ids and predictions from the original model and confirm the Ruby predictions match. Here’s some [example code](https://github.com/ankane/eps#verifying).
 

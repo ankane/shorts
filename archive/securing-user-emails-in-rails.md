@@ -1,5 +1,11 @@
 # Securing User Emails in Rails
 
+---
+
+*There is an [updated version](https://ankane.org/securing-user-emails-lockbox) of this post.*
+
+---
+
 The GDPR goes into effect next Friday. Whether or not you serve European residents, it’s a great reminder that we have the responsibility to build systems in a way that protects user privacy.
 
 Email addresses are a common form of personal data, and they’re often stored unencrypted. If an attacker gains access to the database or backups, emails will be compromised.

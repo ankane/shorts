@@ -22,12 +22,10 @@ task preload: :environment do
 end
 ```
 
-Add a [custom buildpack](https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks) to run the preload script and (optionally) migrations.
+And add a [release phase](https://devcenter.heroku.com/articles/release-phase) task to your `Procfile` to run the preload script and (optionally) migrations.
 
-```ruby
-heroku buildpacks:add https://github.com/heroku/heroku-buildpack-ruby
-heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks
-heroku config:set DEPLOY_TASKS="preload db:migrate"
+```sh
+release: bundle exec rails preload db:migrate
 ```
 
 Create a deployment script in `bin/deploy`. Here’s an example:
@@ -120,9 +118,9 @@ Add a performance monitoring service like New Relic.
 heroku addons:create newrelic
 ```
 
-And follow the [installation instructions](https://devcenter.heroku.com/articles/newrelic#ruby-installation-and-configuration).
+And follow the [installation instructions](https://devcenter.heroku.com/articles/newrelic).
 
-Use [heroku_rails_deflate](https://github.com/mattolson/heroku_rails_deflate) to enable compression and a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) like [Amazon CloudFront](https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn) to serve assets.
+Use a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) like [Amazon CloudFront](https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn) to serve assets.
 
 ## Autoscaling
 
