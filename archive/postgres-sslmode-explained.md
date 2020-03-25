@@ -1,6 +1,6 @@
 # Postgres SSLMODE Explained
 
-When you connect to your database, Postgres uses the `sslmode` parameter to determine the security of the connection. There are many options, so here’s an analogy to web security:
+When you connect to a database, Postgres uses the `sslmode` parameter to determine the security of the connection. There are many options, so here’s an analogy to web security:
 
 - `disable` is HTTP
 - `verify-full` is HTTPS
@@ -17,13 +17,13 @@ Other modes like `require` are still useful in protecting against passive attack
 
 ## Defense
 
-The best way to protect your database is to limit inbound traffic. Require a VPN or SSH tunneling through a [bastion host](https://medium.com/@bill_73959/understanding-bastions-hosts-6ccd457e41ac) to connect. This ensures connections are always secure, and even if database credentials are compromised, an attacker won’t be able to access the database.
+The best way to protect a database is to limit inbound traffic. Require a VPN or SSH tunneling through a [bastion host](https://medium.com/@bill_73959/understanding-bastions-hosts-6ccd457e41ac) to connect. This ensures connections are always secure, and even if database credentials are compromised, an attacker won’t be able to access the database.
 
 If this is not feasible, always use `verify-full`. This includes from code, psql, SQL clients, and other tools like [pgsync](https://github.com/ankane/pgsync) and [pgslice](https://github.com/ankane/pgslice).
 
 You can specify `sslmode` in the connection URI:
 
-```
+```text
 postgresql://user:pass@host/dbname?sslmode=verify-full&sslrootcert=ca.pem
 ```
 
@@ -47,8 +47,9 @@ Here are root certificates for a number of providers:
 
 Provider | Certificate | Docs
 --- | --- | ---
-Amazon RDS | [Download](https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem) | [View](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.SSL)
-Google Cloud SQL | Per-instance | [View](https://cloud.google.com/sql/docs/postgres/connect-admin-ip)
+Amazon RDS | [Download](https://s3.amazonaws.com/rds-downloads/rds-ca-2019-root.pem) | [View](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.SSL)
+Google Cloud SQL | In Account | [View](https://cloud.google.com/sql/docs/postgres/connect-admin-ip)
+Digital Ocean | In Account | [View](https://www.digitalocean.com/docs/databases/how-to/clusters/secure-clusters/)
 Citus Data | [Download](https://console.citusdata.com/citus.crt) | [View](https://docs.citusdata.com/en/v8.0/cloud/security.html)
 
 There’s no way to use `verify-full` with Heroku Postgres, so use caution when connecting from networks you don't fully trust. Instead of `heroku pg:psql`, use:
@@ -64,3 +65,9 @@ If you use PgBouncer, [set up secure connections](https://ankane.org/securing-pg
 ## Conclusion
 
 Hopefully this helps you understand connection security a bit better.
+
+<div style="margin-top: 2rem;"></div>
+
+Updates
+
+- August 2019: Added Digital Ocean

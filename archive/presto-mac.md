@@ -12,7 +12,7 @@ brew install presto
 
 Next, add a connector. Here’s the list of [available ones](https://prestodb.io/docs/current/connector.html).
 
-For PostgreSQL, create `/usr/local/Cellar/presto/0.150/libexec/etc/catalog/mydb.properties` with:
+For PostgreSQL, create `/usr/local/opt/presto/libexec/etc/catalog/mydb.properties` with:
 
 ```ini
 connector.name=postgresql

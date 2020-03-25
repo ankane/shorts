@@ -6,17 +6,17 @@ In under 5 minutes
 
 Here’s the flow:
 
-```
+```text
 Web app -> PgBouncer -> Postgres
 ```
 
 You can install PgBouncer on the same server as Postgres or a separate server. For Amazon RDS, you won’t have shell access to the database server, so you’ll need to spin up another EC2 instance to run PgBouncer.
 
-```
+```text
 Web app -> EC2 running PgBouncer -> RDS instance
 ```
 
-Start by launching a new instance of Ubuntu Server 16.04 LTS. Once the server is ready, ssh in. For the latest version of PgBouncer, we’ll use the [official Postgres APT repository](https://wiki.postgresql.org/wiki/Apt).
+Start by launching a new instance of the latest LTS version of Ubuntu Server. Once the server is ready, ssh in. For the latest version of PgBouncer, we’ll use the [official Postgres APT repository](https://wiki.postgresql.org/wiki/Apt).
 
 ```sh
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'

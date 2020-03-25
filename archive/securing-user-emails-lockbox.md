@@ -7,6 +7,7 @@
 *This is an update to [Securing User Emails in Rails](https://ankane.org/securing-user-emails-in-rails) with a number of improvements:*
 
 - *Works with Devise’s email changed notifications*
+- *Works with Devise’s reconfirmable option*
 - *Stores encrypted data in a single field*
 - *You only need to manage a single key*
 
@@ -41,7 +42,7 @@ And run:
 bundle install
 ```
 
-Generate an key
+Generate a key
 
 ```ruby
 Lockbox.generate_key
@@ -53,14 +54,12 @@ Set the following environment variables with your key (you can use this one in d
 
 ```sh
 LOCKBOX_MASTER_KEY=0000000000000000000000000000000000000000000000000000000000000000
-BLIND_INDEX_MASTER_KEY=0000000000000000000000000000000000000000000000000000000000000000
 ```
 
 or create `config/initializers/lockbox.rb` with something like
 
 ```ruby
 Lockbox.master_key = Rails.application.credentials.lockbox_master_key
-BlindIndex.master_key = Lockbox.master_key
 ```
 
 Next, let’s replace the email field with an encrypted version. Create a migration:
@@ -147,7 +146,7 @@ class AddUnconfirmedEmailToUsers < ActiveRecord::Migration[5.2]
 end
 ```
 
-And add `unconfirmed_email` to the list of encrypted fields.
+And add `unconfirmed_email` to the list of encrypted fields and a new method:
 
 ```ruby
 class User < ApplicationRecord

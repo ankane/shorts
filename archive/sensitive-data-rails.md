@@ -117,6 +117,8 @@ This approach protects data from physical theft. However, it doesn’t protect a
 
 For this, you need to encrypt data before it’s sent to the database. This is known as application-level encryption. Use storage-level encryption for all data and application-level encryption for sensitive data.
 
+*2019 Update:* Check out [Lockbox](https://ankane.org/modern-encryption-rails) for application-level encryption.
+
 There’s a popular gem called [attr_encrypted](https://github.com/attr-encrypted/attr_encrypted) that integrates nicely with Active Record.
 
 ```ruby
@@ -215,7 +217,7 @@ One approach is called [blind indexing](https://www.sitepoint.com/how-to-search-
 
 ```ruby
 class User < ApplicationRecord
-  blind_index :email, key: key
+  blind_index :email
 end
 ```
 
@@ -415,6 +417,7 @@ To prevent user confusion, we’ll use the [7z format](https://en.wikipedia.org/
 ```ruby
 File.open("archive.7z", "wb") do |file|
   SevenZipRuby::Writer.open(file, password: "secret") do |szw|
+    szw.header_encryption = true
     szw.add_file("file1.txt")
     szw.add_file("file2.txt")
   end

@@ -89,6 +89,14 @@ class User < ApplicationRecord
 end
 ```
 
+## Updates
+
+Since this post was originally published:
+
+- Lockbox also supports [types](https://ankane.org/lockbox-types)
+- Here’s how to [encrypt user email addresses](https://ankane.org/securing-user-emails-lockbox)
+- Lockbox supports [Mongoid](https://ankane.org/modern-encryption-mongoid)
+
 ## Summary
 
 You’ve now seen what Lockbox brings to encryption for Rails. To summarize, it:

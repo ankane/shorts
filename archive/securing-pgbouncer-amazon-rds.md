@@ -100,7 +100,7 @@ client_tls_cert_file = /path/to/bouncerhost/cert.pem
 
 And restart the service. To connect, we once again use `verify-full` but this time with the root certificate we generated above:
 
-```psql
+```sh
 psql "postgresql://user:secret@bouncerhost:6432/ssltest?sslmode=verify-full&sslrootcert=minica.pem"
 ```
 

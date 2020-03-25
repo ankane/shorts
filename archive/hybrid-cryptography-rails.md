@@ -40,29 +40,21 @@ Only set the decryption key on servers that should be able to decrypt.
 
 ## Database Fields
 
-We’ll store phone numbers in an encrypted database field. Add to your Gemfile:
-
-```ruby
-gem 'attr_encrypted'
-```
-
-Create a migration to add a new column for the encrypted data. We don’t need a separate IV column, as this will be included in the encrypted data.
+We’ll store phone numbers in an encrypted database field. Create a migration to add a new column for the encrypted data.
 
 ```ruby
 class AddEncryptedPhoneToUsers < ActiveRecord::Migration[5.2]
   def change
-    add_column :users, :encrypted_phone, :string
+    add_column :users, :phone_ciphertext, :string
   end
 end
 ```
 
-In the model, use a custom encryptor provided by Lockbox.
+In the model, add:
 
 ```ruby
 class User < ApplicationRecord
-  attr_encrypted :phone, encryptor: Lockbox::Encryptor, algorithm: "hybrid", encryption_key: ENV["PHONE_ENCRYPTION_KEY"], decryption_key: ENV["PHONE_DECRYPTION_KEY"]
-
-  attr_accessor :encrypted_phone_iv # prevent attr_encrypted error
+  encrypts :phone, algorithm: "hybrid", encryption_key: ENV["PHONE_ENCRYPTION_KEY"], decryption_key: ENV["PHONE_DECRYPTION_KEY"]
 end
 ```
 
@@ -72,19 +64,19 @@ Set a user’s phone number to ensure it works.
 
 Suppose we also need to accept sensitive documents. We can take a similar approach with file uploads.
 
+For Active Storage, use:
+
+```ruby
+class User < ApplicationRecord
+  encrypts_attached :document, algorithm: "hybrid", encryption_key: ENV["PHONE_ENCRYPTION_KEY"], decryption_key: ENV["PHONE_DECRYPTION_KEY"]
+end
+```
+
 For CarrierWave, use:
 
 ```ruby
 class DocumentUploader < CarrierWave::Uploader::Base
   encrypt algorithm: "hybrid", encryption_key: ENV["PHONE_ENCRYPTION_KEY"], decryption_key: ENV["PHONE_DECRYPTION_KEY"]
-end
-```
-
-For Active Storage, use:
-
-```ruby
-class User < ApplicationRecord
-  attached_encrypted :document, algorithm: "hybrid", encryption_key: ENV["PHONE_ENCRYPTION_KEY"], decryption_key: ENV["PHONE_DECRYPTION_KEY"]
 end
 ```
 

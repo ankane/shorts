@@ -49,6 +49,8 @@ Here are a few libraries for building models in Ruby:
 
 - [Eps](https://github.com/ankane/eps) - good for beginners
 - [Rumale](https://github.com/yoshoku/rumale) - good for advanced users
+- [Xgb](https://github.com/ankane/xgb) - XGBoost
+- [LightGBM](https://github.com/ankane/lightgbm) - LightGBM
 - And [many more](https://github.com/arbox/machine-learning-with-ruby)
 
 Once a model is trained, you’ll need to store it. You can use methods provided by the library, or marshal if none exist. You can store the models as files or in the database.
@@ -76,7 +78,8 @@ Here are models that can currently predict in Ruby:
 
 - [Eps](https://github.com/ankane/eps) - Linear Regression, Naive Bayes
 - [Scoruby](https://github.com/asafschers/scoruby) - Random Forest, GBM, Decision Tree, Naive Bayes
-- [XGBoost](https://github.com/PairOnAir/xgboost-ruby) - XGBoost
+- [Xgb](https://github.com/ankane/xgb) - XGBoost
+- [LightGBM](https://github.com/ankane/lightgbm) - LightGBM
 
 For this to work, models need to be stored in a shared format that both languages understand. PMML and PFA are two interchange formats. PFA is newer but has less adoption than PMML. Andrey Melentyev has a [great post](https://www.andrey-melentyev.com/model-interoperability.html) on the topic.
 
@@ -160,3 +163,10 @@ Cons
 You’ve now seen four great patterns for bringing predictive models to Rails. Each has different trade-offs, so we recommend taking the simplest approach that works for you. No matter which you choose, make sure your models are reproducible.
 
 Happy modeling!
+
+<div style="margin-top: 2rem;"></div>
+
+Updates
+
+- May 2019: Added Rumale
+- August 2019: Added Xgb and LightGBM
